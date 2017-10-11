@@ -175,6 +175,12 @@ p_mode_start:
    lgdt [gdt_ptr]             ; 重新加载
 
    mov byte [gs:160], 'V'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:162], 'i'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:164], 'r'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:166], 't'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:168], 'u'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:170], 'a'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:172], 'l'     ;视频段段基址已经被更新,用字符v表示virtual addr
 
    jmp $
 
@@ -210,7 +216,7 @@ setup_page:
    mov edx, PG_US_U | PG_RW_W | PG_P	     ; 属性为7,US=1,RW=1,P=1
 .create_pte:				     ; 创建Page Table Entry
    mov [ebx+esi*4],edx			     ; 此时的ebx已经在上面通过eax赋值为0x101000,也就是第一个页表的地址 
-   add edx,4096
+   add edx,4096      ; edx
    inc esi
    loop .create_pte
 

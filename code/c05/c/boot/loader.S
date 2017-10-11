@@ -179,16 +179,39 @@ p_mode_start:
    ;在开启分页后,用gdt新的地址重新加载
    lgdt [gdt_ptr]             ; 重新加载
 
+   mov byte [gs:160], 'V'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:162], 'i'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:164], 'r'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:166], 't'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:168], 'u'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:170], 'a'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   mov byte [gs:172], 'l'     ;视频段段基址已经被更新,用字符v表示virtual addr
+   
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;  此时不刷新流水线也没问题  ;;;;;;;;;;;;;;;;;;;;;;;;
 ;由于一直处在32位下,原则上不需要强制刷新,经过实际测试没有以下这两句也没问题.
 ;但以防万一，还是加上啦，免得将来出来莫句奇妙的问题.
    jmp SELECTOR_CODE:enter_kernel	  ;强制刷新流水线,更新gdt
 enter_kernel:    
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   mov byte [gs:320], 'k'     ;视频段段基址已经被更新
+   mov byte [gs:322], 'e'     ;视频段段基址已经被更新
+   mov byte [gs:324], 'r'     ;视频段段基址已经被更新
+   mov byte [gs:326], 'n'     ;视频段段基址已经被更新
+   mov byte [gs:328], 'e'     ;视频段段基址已经被更新
+   mov byte [gs:330], 'l'     ;视频段段基址已经被更新
+
+   mov byte [gs:480], 'w'     ;视频段段基址已经被更新
+   mov byte [gs:482], 'h'     ;视频段段基址已经被更新
+   mov byte [gs:484], 'i'     ;视频段段基址已经被更新
+   mov byte [gs:486], 'l'     ;视频段段基址已经被更新
+   mov byte [gs:488], 'e'     ;视频段段基址已经被更新
+   mov byte [gs:490], '('     ;视频段段基址已经被更新
+   mov byte [gs:492], '1'     ;视频段段基址已经被更新
+   mov byte [gs:494], ')'     ;视频段段基址已经被更新
+   mov byte [gs:496], ';'     ;视频段段基址已经被更新
    call kernel_init
    mov esp, 0xc009f000
    jmp KERNEL_ENTRY_POINT                 ; 用地址0x1500访问测试，结果ok
-
 
 ;-----------------   将kernel.bin中的segment拷贝到编译的地址   -----------
 kernel_init:

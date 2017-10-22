@@ -21,6 +21,5 @@ else
     file /usr/share/vgabios/vgabios.bin
 fi
 echo "check over ...."
-sleep 1
 echo "run........"
 /usr/bin/bochs -f bochsrc.disk

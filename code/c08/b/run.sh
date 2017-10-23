@@ -4,6 +4,10 @@ if [ ! -e bochsrc.disk ];then
     echo "no bochsrc.disk,please checkout!"
     exit 1
 fi
+if [ ! -e hd3M.img ];then 
+    echo "no bootimage!"
+    exit 1
+fi
 if [ ! -e  /usr/share/bochs/keymaps/x11-pc-us.map ];then
     echo "/usr/share/bochs/keymaps/x11-pc-us.map does not exist..."
     exit 1

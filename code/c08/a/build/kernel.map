@@ -107,15 +107,15 @@ LOAD build/debug.o
                 0x00000000c0001500                main
  .text          0x00000000c0001541       0x23 build/init.o
                 0x00000000c0001541                init_all
- .text          0x00000000c0001564      0x388 build/interrupt.o
+ .text          0x00000000c0001564      0x398 build/interrupt.o
                 0x00000000c00017fd                intr_enable
                 0x00000000c0001826                intr_disable
                 0x00000000c000184f                intr_set_status
                 0x00000000c000186d                intr_get_status
-                0x00000000c000188a                idt_init
- .text          0x00000000c00018ec       0xed build/timer.o
-                0x00000000c0001998                timer_init
- *fill*         0x00000000c00019d9        0x7 
+                0x00000000c0001891                idt_init
+ .text          0x00000000c00018fc       0xdb build/timer.o
+                0x00000000c0001996                timer_init
+ *fill*         0x00000000c00019d7        0x9 
  .text          0x00000000c00019e0      0x393 build/kernel.o
                 0x00000000c00019e0                intr_exit
  *fill*         0x00000000c0001d73        0xd 
@@ -154,10 +154,10 @@ LOAD build/debug.o
  .eh_frame      0x00000000c000229c       0x3c build/main.o
  .eh_frame      0x00000000c00022d8       0x20 build/init.o
                                          0x38 (松开之前的大小)
- .eh_frame      0x00000000c00022f8      0x164 build/interrupt.o
-                                        0x17c (松开之前的大小)
- .eh_frame      0x00000000c000245c       0x6c build/timer.o
-                                         0x84 (松开之前的大小)
+ .eh_frame      0x00000000c00022f8      0x168 build/interrupt.o
+                                        0x180 (松开之前的大小)
+ .eh_frame      0x00000000c0002460       0x68 build/timer.o
+                                         0x80 (松开之前的大小)
  .eh_frame      0x00000000c00024c8       0x1c build/debug.o
                                          0x34 (松开之前的大小)
  *(.eh_frame.*)
@@ -300,14 +300,14 @@ LOAD build/debug.o
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x0000000000000000       0x11
+.comment        0x0000000000000000       0x34
  *(.comment)
- .comment       0x0000000000000000       0x11 build/main.o
-                                         0x12 (松开之前的大小)
- .comment       0x0000000000000011       0x12 build/init.o
- .comment       0x0000000000000011       0x12 build/interrupt.o
- .comment       0x0000000000000011       0x12 build/timer.o
- .comment       0x0000000000000011       0x12 build/debug.o
+ .comment       0x0000000000000000       0x34 build/main.o
+                                         0x35 (松开之前的大小)
+ .comment       0x0000000000000034       0x35 build/init.o
+ .comment       0x0000000000000034       0x35 build/interrupt.o
+ .comment       0x0000000000000034       0x35 build/timer.o
+ .comment       0x0000000000000034       0x35 build/debug.o
 
 .debug
  *(.debug)

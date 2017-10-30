@@ -4,21 +4,21 @@
 
 #define offset(struct_type,member) (int)(&((struct_type*)0)->member)
 #define elem2entry(struct_type, struct_member_name, elem_ptr) \
-	 (struct_type*)((int)elem_ptr - offset(struct_type, struct_member_name))
+        (struct_type*)((int)elem_ptr - offset(struct_type, struct_member_name))
 
 /**********   定义链表结点成员结构   ***********
 *结点中不需要数据成元,只要求前驱和后继结点指针*/
 struct list_elem {
-   struct list_elem* prev; // 前躯结点
-   struct list_elem* next; // 后继结点
+    struct list_elem* prev; // 前躯结点
+    struct list_elem* next; // 后继结点
 };
 
 /* 链表结构,用来实现队列 */
 struct list {
-/* head是队首,是固定不变的，不是第1个元素,第1个元素为head.next */
-   struct list_elem head;
-/* tail是队尾,同样是固定不变的 */
-   struct list_elem tail;
+    /* head是队首,是固定不变的，不是第1个元素,第1个元素为head.next */
+    struct list_elem head;
+    /* tail是队尾,同样是固定不变的 */
+    struct list_elem tail;
 };
 
 /* 自定义函数类型function,用于在list_traversal中做回调函数 */

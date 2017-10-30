@@ -8,7 +8,7 @@ int main(void) {
    put_str("I am kernel\n");
    init_all();
 
-   thread_start("k_thread_a", 31, k_thread_a, "argA ");
+   thread_start("k_thread_a", 31, k_thread_a, "realize list.c ");
 
    while(1);
    return 0;

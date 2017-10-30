@@ -175,18 +175,19 @@ LOAD build/thread.o
                 [!provide]                        PROVIDE (_etext, .)
                 [!provide]                        PROVIDE (etext, .)
 
-.rodata         0x00000000c0002c6c      0x550
+.rodata         0x00000000c0002c6c      0x55c
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00000000c0002c6c       0x1e build/main.o
- .rodata        0x00000000c0002c8a        0xa build/init.o
- .rodata        0x00000000c0002c94      0x265 build/interrupt.o
- .rodata        0x00000000c0002ef9       0x23 build/timer.o
- .rodata        0x00000000c0002f1c       0x3f build/debug.o
- *fill*         0x00000000c0002f5b        0x1 
- .rodata        0x00000000c0002f5c      0x130 build/memory.o
- .rodata        0x00000000c000308c       0x6b build/bitmap.o
- *fill*         0x00000000c00030f7        0x1 
- .rodata        0x00000000c00030f8       0xc4 build/string.o
+ .rodata        0x00000000c0002c6c       0x29 build/main.o
+ .rodata        0x00000000c0002c95        0xa build/init.o
+ *fill*         0x00000000c0002c9f        0x1 
+ .rodata        0x00000000c0002ca0      0x265 build/interrupt.o
+ .rodata        0x00000000c0002f05       0x23 build/timer.o
+ .rodata        0x00000000c0002f28       0x3f build/debug.o
+ *fill*         0x00000000c0002f67        0x1 
+ .rodata        0x00000000c0002f68      0x130 build/memory.o
+ .rodata        0x00000000c0003098       0x6b build/bitmap.o
+ *fill*         0x00000000c0003103        0x1 
+ .rodata        0x00000000c0003104       0xc4 build/string.o
 
 .rodata1
  *(.rodata1)
@@ -195,24 +196,24 @@ LOAD build/thread.o
  *(.eh_frame_hdr)
  *(.eh_frame_entry .eh_frame_entry.*)
 
-.eh_frame       0x00000000c00031bc      0x5cc
+.eh_frame       0x00000000c00031c8      0x5cc
  *(.eh_frame)
- .eh_frame      0x00000000c00031bc       0x58 build/main.o
- .eh_frame      0x00000000c0003214       0x20 build/init.o
+ .eh_frame      0x00000000c00031c8       0x58 build/main.o
+ .eh_frame      0x00000000c0003220       0x20 build/init.o
                                          0x38 (松开之前的大小)
- .eh_frame      0x00000000c0003234      0x164 build/interrupt.o
+ .eh_frame      0x00000000c0003240      0x164 build/interrupt.o
                                         0x17c (松开之前的大小)
- .eh_frame      0x00000000c0003398       0x6c build/timer.o
+ .eh_frame      0x00000000c00033a4       0x6c build/timer.o
                                          0x84 (松开之前的大小)
- .eh_frame      0x00000000c0003404       0x1c build/debug.o
+ .eh_frame      0x00000000c0003410       0x1c build/debug.o
                                          0x34 (松开之前的大小)
- .eh_frame      0x00000000c0003420      0x120 build/memory.o
+ .eh_frame      0x00000000c000342c      0x120 build/memory.o
                                         0x138 (松开之前的大小)
- .eh_frame      0x00000000c0003540       0x88 build/bitmap.o
+ .eh_frame      0x00000000c000354c       0x88 build/bitmap.o
                                          0xa0 (松开之前的大小)
- .eh_frame      0x00000000c00035c8      0x140 build/string.o
+ .eh_frame      0x00000000c00035d4      0x140 build/string.o
                                         0x158 (松开之前的大小)
- .eh_frame      0x00000000c0003708       0x80 build/thread.o
+ .eh_frame      0x00000000c0003714       0x80 build/thread.o
                                          0x98 (松开之前的大小)
  *(.eh_frame.*)
 
@@ -224,7 +225,7 @@ LOAD build/thread.o
 
 .exception_ranges
  *(.exception_ranges .exception_ranges*)
-                0x00000000c0004788                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+                0x00000000c0004794                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
 
 .eh_frame
  *(.eh_frame)
@@ -246,18 +247,18 @@ LOAD build/thread.o
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x00000000c0004788        0x0
+.preinit_array  0x00000000c0004794        0x0
                 [!provide]                        PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end, .)
 
-.init_array     0x00000000c0004788        0x0
+.init_array     0x00000000c0004794        0x0
                 [!provide]                        PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*) SORT(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
                 [!provide]                        PROVIDE (__init_array_end, .)
 
-.fini_array     0x00000000c0004788        0x0
+.fini_array     0x00000000c0004794        0x0
                 [!provide]                        PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*) SORT(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
@@ -290,34 +291,34 @@ LOAD build/thread.o
 .got
  *(.got)
  *(.igot)
-                0x00000000c0004788                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+                0x00000000c0004794                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
 
-.got.plt        0x00000000c0004788        0x0
+.got.plt        0x00000000c0004794        0x0
  *(.got.plt)
  *(.igot.plt)
- .igot.plt      0x00000000c0004788        0x0 build/main.o
+ .igot.plt      0x00000000c0004794        0x0 build/main.o
 
-.data           0x00000000c0004788       0x8c
+.data           0x00000000c0004794       0x8c
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00000000c0004788        0x0 build/main.o
- .data          0x00000000c0004788        0x0 build/init.o
- .data          0x00000000c0004788        0x0 build/interrupt.o
- .data          0x00000000c0004788        0x0 build/timer.o
- .data          0x00000000c0004788       0x84 build/kernel.o
-                0x00000000c0004788                intr_entry_table
- .data          0x00000000c000480c        0x8 build/print.o
- .data          0x00000000c0004814        0x0 build/debug.o
- .data          0x00000000c0004814        0x0 build/memory.o
- .data          0x00000000c0004814        0x0 build/bitmap.o
- .data          0x00000000c0004814        0x0 build/string.o
- .data          0x00000000c0004814        0x0 build/thread.o
+ .data          0x00000000c0004794        0x0 build/main.o
+ .data          0x00000000c0004794        0x0 build/init.o
+ .data          0x00000000c0004794        0x0 build/interrupt.o
+ .data          0x00000000c0004794        0x0 build/timer.o
+ .data          0x00000000c0004794       0x84 build/kernel.o
+                0x00000000c0004794                intr_entry_table
+ .data          0x00000000c0004818        0x8 build/print.o
+ .data          0x00000000c0004820        0x0 build/debug.o
+ .data          0x00000000c0004820        0x0 build/memory.o
+ .data          0x00000000c0004820        0x0 build/bitmap.o
+ .data          0x00000000c0004820        0x0 build/string.o
+ .data          0x00000000c0004820        0x0 build/thread.o
 
 .data1
  *(.data1)
-                0x00000000c0004814                _edata = .
+                0x00000000c0004820                _edata = .
                 [!provide]                        PROVIDE (edata, .)
-                0x00000000c0004814                . = .
-                0x00000000c0004814                __bss_start = .
+                0x00000000c0004820                . = .
+                0x00000000c0004820                __bss_start = .
 
 .bss            0x00000000c0004820      0x270
  *(.dynbss)

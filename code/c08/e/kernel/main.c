@@ -9,7 +9,10 @@ int main(void) {
    put_str("\n get_kernel_page start vaddr is ");
    put_int((uint32_t)addr);
    put_str("\n");
-
+   void* addr2 = get_kernel_pages(2);
+   put_str("\n get_kernel_page start vaddr2 is ");
+   put_int((uint32_t)addr2);
+   put_str("\n");
    while(1);
    return 0;
 }

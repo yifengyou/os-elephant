@@ -109,9 +109,11 @@ hd:
            of=hd3M.img \
            bs=512 count=200 seek=9 conv=notrunc
 
+ctags:
+	ctags -R
 clean:
 	cd $(BUILD_DIR) && rm -f ./* && rm ../$(DISK_IMG)
 
 build: $(BUILD_DIR)/kernel.bin $(BUILD_DIR)/mbr.bin $(BUILD_DIR)/loader.bin
 
-all: mk_dir mk_img build hd
+all: mk_dir mk_img build hd ctags

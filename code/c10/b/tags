@@ -232,6 +232,8 @@ intr_status	kernel/interrupt.h	/^enum intr_status {		 \/\/ 中断状态$/;"	g
 intr_timer_handler	device/timer.c	/^static void intr_timer_handler(void) {$/;"	f	file:
 k_thread_a	kernel/main.c	/^void k_thread_a(void* arg) {     $/;"	f
 k_thread_b	kernel/main.c	/^void k_thread_b(void* arg) {     $/;"	f
+k_thread_c	kernel/main.c	/^void k_thread_c(void* arg) {     $/;"	f
+k_thread_d	kernel/main.c	/^void k_thread_d(void* arg) {     $/;"	f
 kernel_init	boot/loader.S	/^kernel_init:$/;"	l
 kernel_pool	kernel/memory.c	/^struct pool kernel_pool, user_pool;      \/\/ 生成内核内存池和用户内存池$/;"	v	typeref:struct:pool
 kernel_thread	thread/thread.c	/^static void kernel_thread(thread_func* function, void* func_arg) {$/;"	f	file:

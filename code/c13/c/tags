@@ -45,7 +45,7 @@ DESC_TYPE_CODE	kernel/global.h	24;"	d
 DESC_TYPE_DATA	kernel/global.h	25;"	d
 DESC_TYPE_TSS	kernel/global.h	26;"	d
 DISK_IMG	makefile	/^DISK_IMG = hd3M.img$/;"	m
-DISK_IMG2	makefile	/^DISK_IMG2 = hd8M.img$/;"	m
+DISK_IMG2	makefile	/^DISK_IMG2 = hd40M.img$/;"	m
 DIV_ROUND_UP	kernel/global.h	120;"	d
 EFLAGS_IF	kernel/interrupt.c	14;"	d	file:
 EFLAGS_IF_0	kernel/global.h	115;"	d

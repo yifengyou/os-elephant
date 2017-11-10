@@ -1,6 +1,6 @@
 BUILD_DIR = ./build
 DISK_IMG = hd3M.img
-DISK_IMG2 = hd8M.img
+DISK_IMG2 = hd40M.img
 ENTRY_POINT = 0xc0001500
 AS = nasm
 CC = gcc
@@ -164,7 +164,7 @@ ctags:
 	ctags -R
 
 clean:
-	cd $(BUILD_DIR) && rm -f ./* && rm ../$(DISK_IMG)
+	cd $(BUILD_DIR) && rm -f ./* && rm ../*.img
 
 build: $(BUILD_DIR)/kernel.bin $(BUILD_DIR)/mbr.bin $(BUILD_DIR)/loader.bin
 

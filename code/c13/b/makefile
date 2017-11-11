@@ -1,6 +1,6 @@
 BUILD_DIR = ./build
 DISK_IMG = hd3M.img
-DISK_IMG2 = hd40M.img
+DISK_IMG2 = hd80M.img
 ENTRY_POINT = 0xc0001500
 AS = nasm
 CC = gcc
@@ -9,7 +9,7 @@ LIB = -I lib/ -I lib/kernel/ -I lib/user/ -I kernel/ -I device/ -I thread/  -I u
 ASFLAGS = -f elf 
 ASBINLIB = -I boot/include/
 CFLAGS = -m32 -Wall $(LIB) -c -fno-builtin -W -Wstrict-prototypes \
-		 -Wmissing-prototypes 
+		 -Wmissing-prototypes  -fno-stack-protector
 LDFLAGS = -melf_i386 -Ttext $(ENTRY_POINT) -e main -Map $(BUILD_DIR)/kernel.map
 OBJS = $(BUILD_DIR)/main.o $(BUILD_DIR)/init.o $(BUILD_DIR)/interrupt.o \
 	   $(BUILD_DIR)/timer.o $(BUILD_DIR)/kernel.o $(BUILD_DIR)/print.o \
@@ -152,7 +152,7 @@ mk_img:
 	if [ ! -e $(DISK_IMG) ];then /usr/bin/bximage -hd -mode="flat" -size=3 -q $(DISK_IMG);fi
 
 disk_img:
-	if [ ! -e $(DISK_IMG2) ];then /usr/bin/bximage -hd -mode="flat" -size=8 -q $(DISK_IMG2);fi
+	if [ ! -e $(DISK_IMG2) ];then /usr/bin/bximage -hd -mode="flat" -size=80 -q $(DISK_IMG2);fi
 
 hd:
 	dd if=$(BUILD_DIR)/mbr.bin of=hd3M.img bs=512 count=1  conv=notrunc

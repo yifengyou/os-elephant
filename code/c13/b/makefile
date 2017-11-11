@@ -1,6 +1,6 @@
 BUILD_DIR = ./build
 DISK_IMG = hd3M.img
-DISK_IMG2 = hd80M.img
+DISK_IMG2 = hd50M.img
 ENTRY_POINT = 0xc0001500
 AS = nasm
 CC = gcc
@@ -152,7 +152,7 @@ mk_img:
 	if [ ! -e $(DISK_IMG) ];then /usr/bin/bximage -hd -mode="flat" -size=3 -q $(DISK_IMG);fi
 
 disk_img:
-	if [ ! -e $(DISK_IMG2) ];then /usr/bin/bximage -hd -mode="flat" -size=80 -q $(DISK_IMG2);fi
+	if [ ! -e $(DISK_IMG2) ];then /usr/bin/bximage -hd -mode="flat" -size=50 -q $(DISK_IMG2);fi
 
 hd:
 	dd if=$(BUILD_DIR)/mbr.bin of=hd3M.img bs=512 count=1  conv=notrunc

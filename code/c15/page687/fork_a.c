@@ -10,13 +10,13 @@ int main()
         return 0;
     }
     if ( pid ){
-        printf("Iam father,my pid is %d\n"),getpid(); 
-    	sleep(5);
-	return 0;
+        printf("I am father,my pid is %d\n",getpid());
+        sleep(5);
+        return 0;
     }else{
         printf("I am child,my pid is %d\n",getpid());
-	sleep(5);
-	return 0;
+        sleep(5);
+        return 0;
     }
 }
 

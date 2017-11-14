@@ -203,8 +203,8 @@ ctags:
 	ctags -R
 
 clean:
-	cd $(BUILD_DIR) && rm -f ./* && rm ../*.img
+	cd $(BUILD_DIR) && rm -f ./* && if [ -e hd*.img ];then rm ../*.img;fi
 
 build: $(BUILD_DIR)/kernel.bin $(BUILD_DIR)/mbr.bin $(BUILD_DIR)/loader.bin
 
-all: mk_dir mk_img disk_img build hd ctags
+all: clean mk_dir mk_img disk_img build hd ctags

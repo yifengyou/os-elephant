@@ -1,0 +1,1012 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AS	makefile	/^AS = nasm$/;"	m
+ASBINLIB	makefile	/^ASBINLIB = -I boot\/include\/$/;"	m
+ASFLAGS	makefile	/^ASFLAGS = -f elf $/;"	m
+ASSERT	kernel/debug.h	13;"	d
+ASSERT	kernel/debug.h	15;"	d
+BITMAP_MASK	lib/kernel/bitmap.h	4;"	d
+BITS_PER_SECTOR	fs/fs.h	6;"	d
+BIT_DEV_DEV	device/ide.c	35;"	d	file:
+BIT_DEV_LBA	device/ide.c	34;"	d	file:
+BIT_DEV_MBS	device/ide.c	33;"	d	file:
+BIT_STAT_BSY	device/ide.c	28;"	d	file:
+BIT_STAT_DRDY	device/ide.c	29;"	d	file:
+BIT_STAT_DRQ	device/ide.c	30;"	d	file:
+BLOCK_BITMAP	fs/file.h	/^   BLOCK_BITMAP	     \/\/ 块位图$/;"	e	enum:bitmap_type
+BLOCK_SIZE	fs/fs.h	8;"	d
+BUILD_DIR	makefile	/^BUILD_DIR = .\/build$/;"	m
+CC	makefile	/^CC = gcc$/;"	m
+CFLAGS	makefile	/^CFLAGS = -m32 -Wall $(LIB) -c -fno-builtin -W -Wstrict-prototypes \\$/;"	m
+CMD_IDENTIFY	device/ide.c	38;"	d	file:
+CMD_READ_SECTOR	device/ide.c	39;"	d	file:
+CMD_WRITE_SECTOR	device/ide.c	40;"	d	file:
+CODE_DESC	boot/loader.S	/^   CODE_DESC:  dd    0x0000FFFF $/;"	d
+CONTRER0_PORT	device/timer.c	11;"	d	file:
+COUNTER0_NO	device/timer.c	12;"	d	file:
+COUNTER0_VALUE	device/timer.c	10;"	d	file:
+COUNTER_MODE	device/timer.c	13;"	d	file:
+DATA_STACK_DESC	boot/loader.S	/^   DATA_STACK_DESC:  dd    0x0000FFFF$/;"	d
+DEFAULT_SECS	fs/file.c	14;"	d	file:
+DESC_AVL	kernel/global.h	11;"	d
+DESC_CNT	kernel/memory.h	40;"	d
+DESC_DPL_0	kernel/global.h	13;"	d
+DESC_DPL_1	kernel/global.h	14;"	d
+DESC_DPL_2	kernel/global.h	15;"	d
+DESC_DPL_3	kernel/global.h	16;"	d
+DESC_D_32	kernel/global.h	9;"	d
+DESC_G_4K	kernel/global.h	8;"	d
+DESC_L	kernel/global.h	10;"	d
+DESC_P	kernel/global.h	12;"	d
+DESC_S_CODE	kernel/global.h	21;"	d
+DESC_S_DATA	kernel/global.h	22;"	d
+DESC_S_SYS	kernel/global.h	23;"	d
+DESC_TYPE_CODE	kernel/global.h	24;"	d
+DESC_TYPE_DATA	kernel/global.h	25;"	d
+DESC_TYPE_TSS	kernel/global.h	26;"	d
+DISK_IMG	makefile	/^DISK_IMG = hd3M.img$/;"	m
+DISK_IMG2	makefile	/^DISK_IMG2 = hd50M.img$/;"	m
+DIV_ROUND_UP	kernel/global.h	120;"	d
+EFLAGS_IF	kernel/interrupt.c	14;"	d	file:
+EFLAGS_IF_0	kernel/global.h	115;"	d
+EFLAGS_IF_1	kernel/global.h	114;"	d
+EFLAGS_IOPL_0	kernel/global.h	117;"	d
+EFLAGS_IOPL_3	kernel/global.h	116;"	d
+EFLAGS_MBS	kernel/global.h	113;"	d
+ENTRY_POINT	makefile	/^ENTRY_POINT = 0xc0001500$/;"	m
+Elf32_Addr	userprog/exec.c	/^typedef uint32_t Elf32_Word, Elf32_Addr, Elf32_Off;$/;"	t	file:
+Elf32_Ehdr	userprog/exec.c	/^struct Elf32_Ehdr {$/;"	s	file:
+Elf32_Half	userprog/exec.c	/^typedef uint16_t Elf32_Half;$/;"	t	file:
+Elf32_Off	userprog/exec.c	/^typedef uint32_t Elf32_Word, Elf32_Addr, Elf32_Off;$/;"	t	file:
+Elf32_Phdr	userprog/exec.c	/^struct Elf32_Phdr {$/;"	s	file:
+Elf32_Word	userprog/exec.c	/^typedef uint32_t Elf32_Word, Elf32_Addr, Elf32_Off;$/;"	t	file:
+FT_DIRECTORY	fs/fs.h	/^   FT_DIRECTORY	  \/\/ 目录$/;"	e	enum:file_types
+FT_REGULAR	fs/fs.h	/^   FT_REGULAR,	  \/\/ 普通文件$/;"	e	enum:file_types
+FT_UNKNOWN	fs/fs.h	/^   FT_UNKNOWN,	  \/\/ 不支持的文件类型$/;"	e	enum:file_types
+GDT_ATTR_HIGH	kernel/global.h	46;"	d
+GDT_BASE	boot/loader.S	/^   GDT_BASE:   dd    0x00000000 $/;"	d
+GDT_CODE_ATTR_LOW_DPL3	kernel/global.h	47;"	d
+GDT_DATA_ATTR_LOW_DPL3	kernel/global.h	48;"	d
+GDT_LIMIT	boot/loader.S	/^   GDT_LIMIT   equ   GDT_SIZE -	1 $/;"	d
+GDT_SIZE	boot/loader.S	/^   GDT_SIZE   equ   $ - GDT_BASE$/;"	d
+GET_EFLAGS	kernel/interrupt.c	15;"	d	file:
+IDT_DESC_16_TYPE	kernel/global.h	64;"	d
+IDT_DESC_32_TYPE	kernel/global.h	63;"	d
+IDT_DESC_ATTR_DPL0	kernel/global.h	65;"	d
+IDT_DESC_ATTR_DPL3	kernel/global.h	66;"	d
+IDT_DESC_CNT	kernel/interrupt.c	12;"	d	file:
+IDT_DESC_DPL0	kernel/global.h	61;"	d
+IDT_DESC_DPL3	kernel/global.h	62;"	d
+IDT_DESC_P	kernel/global.h	60;"	d
+INODE_BITMAP	fs/file.h	/^   INODE_BITMAP,     \/\/ inode位图$/;"	e	enum:bitmap_type
+INPUT_FREQUENCY	device/timer.c	9;"	d	file:
+INTR_OFF	kernel/interrupt.h	/^    INTR_OFF,			 \/\/ 中断关闭$/;"	e	enum:intr_status
+INTR_ON	kernel/interrupt.h	/^    INTR_ON		         \/\/ 中断打开$/;"	e	enum:intr_status
+IRQ0_FREQUENCY	device/timer.c	8;"	d	file:
+KBD_BUF_PORT	device/keyboard.c	8;"	d	file:
+K_HEAP_START	kernel/memory.c	22;"	d	file:
+LD	makefile	/^LD = ld$/;"	m
+LDFLAGS	makefile	/^LDFLAGS = -melf_i386 -Ttext $(ENTRY_POINT) -e main -Map $(BUILD_DIR)\/kernel.map$/;"	m
+LIB	makefile	/^LIB = -I lib\/ -I lib\/kernel\/ -I lib\/user\/ -I kernel\/ -I device\/ -I thread\/  -I userprog\/  -I fs\/  -I shell\/$/;"	m
+MAX_ARG_NR	shell/shell.c	12;"	d	file:
+MAX_FILES_OPEN_PER_PROC	thread/thread.h	9;"	d
+MAX_FILES_PER_PART	fs/fs.h	5;"	d
+MAX_FILE_NAME_LEN	fs/dir.h	9;"	d
+MAX_FILE_OPEN	fs/file.h	28;"	d
+MAX_PATH_LEN	fs/fs.h	10;"	d
+MEM_BITMAP_BASE	kernel/memory.c	15;"	d	file:
+NULL	kernel/global.h	119;"	d
+NULL	lib/user/assert.h	4;"	d
+OBJS	makefile	/^OBJS = $(BUILD_DIR)\/main.o $(BUILD_DIR)\/init.o $(BUILD_DIR)\/interrupt.o \\$/;"	m
+O_CREAT	fs/fs.h	/^   O_CREAT = 4	  \/\/ 创建$/;"	e	enum:oflags
+O_RDONLY	fs/fs.h	/^   O_RDONLY,	  \/\/ 只读$/;"	e	enum:oflags
+O_RDWR	fs/fs.h	/^   O_RDWR,	  \/\/ 读写$/;"	e	enum:oflags
+O_WRONLY	fs/fs.h	/^   O_WRONLY,	  \/\/ 只写$/;"	e	enum:oflags
+PANIC	kernel/debug.h	9;"	d
+PDE_IDX	kernel/memory.c	18;"	d	file:
+PF_KERNEL	kernel/memory.h	/^   PF_KERNEL = 1,    \/\/ 内核内存池$/;"	e	enum:pool_flags
+PF_USER	kernel/memory.h	/^   PF_USER = 2	     \/\/ 用户内存池$/;"	e	enum:pool_flags
+PG_P_0	kernel/memory.h	14;"	d
+PG_P_1	kernel/memory.h	13;"	d
+PG_RW_R	kernel/memory.h	15;"	d
+PG_RW_W	kernel/memory.h	16;"	d
+PG_SIZE	kernel/global.h	125;"	d
+PG_US_S	kernel/memory.h	17;"	d
+PG_US_U	kernel/memory.h	18;"	d
+PIC_M_CTRL	kernel/interrupt.c	7;"	d	file:
+PIC_M_DATA	kernel/interrupt.c	8;"	d	file:
+PIC_S_CTRL	kernel/interrupt.c	9;"	d	file:
+PIC_S_DATA	kernel/interrupt.c	10;"	d	file:
+PIPE_FLAG	shell/pipe.h	6;"	d
+PIT_CONTROL_PORT	device/timer.c	15;"	d	file:
+PTE_IDX	kernel/memory.c	19;"	d	file:
+PT_DYNAMIC	userprog/exec.c	/^   PT_DYNAMIC,         \/\/ 动态加载信息 $/;"	e	enum:segment_type	file:
+PT_INTERP	userprog/exec.c	/^   PT_INTERP,          \/\/ 动态加载器名称$/;"	e	enum:segment_type	file:
+PT_LOAD	userprog/exec.c	/^   PT_LOAD,            \/\/ 可加载程序段$/;"	e	enum:segment_type	file:
+PT_NOTE	userprog/exec.c	/^   PT_NOTE,            \/\/ 一些辅助信息$/;"	e	enum:segment_type	file:
+PT_NULL	userprog/exec.c	/^   PT_NULL,            \/\/ 忽略$/;"	e	enum:segment_type	file:
+PT_PHDR	userprog/exec.c	/^   PT_PHDR             \/\/ 程序头表$/;"	e	enum:segment_type	file:
+PT_SHLIB	userprog/exec.c	/^   PT_SHLIB,           \/\/ 保留$/;"	e	enum:segment_type	file:
+READ_WRITE_LATCH	device/timer.c	14;"	d	file:
+RPL0	kernel/global.h	29;"	d
+RPL0	lib/kernel/print.S	/^RPL0  equ   0$/;"	d
+RPL1	kernel/global.h	30;"	d
+RPL2	kernel/global.h	31;"	d
+RPL3	kernel/global.h	32;"	d
+SECTION	boot/mbr.S	/^SECTION MBR vstart=0x7c00         $/;"	l
+SECTOR_SIZE	fs/fs.h	7;"	d
+SEEK_CUR	fs/fs.h	/^   SEEK_CUR,$/;"	e	enum:whence
+SEEK_END	fs/fs.h	/^   SEEK_END$/;"	e	enum:whence
+SEEK_SET	fs/fs.h	/^   SEEK_SET = 1,$/;"	e	enum:whence
+SELECTOR_CODE	boot/loader.S	/^   SELECTOR_CODE equ (0x0001<<3) + TI_GDT + RPL0         ; 相当于(CODE_DESC - GDT_BASE)\/8 + TI_GDT + RPL0$/;"	d
+SELECTOR_DATA	boot/loader.S	/^   SELECTOR_DATA equ (0x0002<<3) + TI_GDT + RPL0	 ; 同上$/;"	d
+SELECTOR_K_CODE	kernel/global.h	37;"	d
+SELECTOR_K_DATA	kernel/global.h	38;"	d
+SELECTOR_K_GS	kernel/global.h	40;"	d
+SELECTOR_K_STACK	kernel/global.h	39;"	d
+SELECTOR_TSS	kernel/global.h	56;"	d
+SELECTOR_U_CODE	kernel/global.h	42;"	d
+SELECTOR_U_DATA	kernel/global.h	43;"	d
+SELECTOR_U_STACK	kernel/global.h	44;"	d
+SELECTOR_VIDEO	boot/loader.S	/^   SELECTOR_VIDEO equ (0x0003<<3) + TI_GDT + RPL0	 ; 同上 $/;"	d
+SELECTOR_VIDEO	lib/kernel/print.S	/^SELECTOR_VIDEO equ (0x0003<<3) + TI_GDT + RPL0$/;"	d
+SYSCALL_NR	lib/user/syscall.h	/^enum SYSCALL_NR {$/;"	g
+SYS_CHDIR	lib/user/syscall.h	/^   SYS_CHDIR,$/;"	e	enum:SYSCALL_NR
+SYS_CLEAR	lib/user/syscall.h	/^   SYS_CLEAR,$/;"	e	enum:SYSCALL_NR
+SYS_CLOSE	lib/user/syscall.h	/^   SYS_CLOSE,$/;"	e	enum:SYSCALL_NR
+SYS_CLOSEDIR	lib/user/syscall.h	/^   SYS_CLOSEDIR,$/;"	e	enum:SYSCALL_NR
+SYS_EXECV	lib/user/syscall.h	/^   SYS_EXECV,$/;"	e	enum:SYSCALL_NR
+SYS_EXIT	lib/user/syscall.h	/^   SYS_EXIT,$/;"	e	enum:SYSCALL_NR
+SYS_FD_REDIRECT	lib/user/syscall.h	/^   SYS_FD_REDIRECT,$/;"	e	enum:SYSCALL_NR
+SYS_FORK	lib/user/syscall.h	/^   SYS_FORK,$/;"	e	enum:SYSCALL_NR
+SYS_FREE	lib/user/syscall.h	/^   SYS_FREE,$/;"	e	enum:SYSCALL_NR
+SYS_GETCWD	lib/user/syscall.h	/^   SYS_GETCWD,$/;"	e	enum:SYSCALL_NR
+SYS_GETPID	lib/user/syscall.h	/^   SYS_GETPID,$/;"	e	enum:SYSCALL_NR
+SYS_HELP	lib/user/syscall.h	/^   SYS_HELP$/;"	e	enum:SYSCALL_NR
+SYS_LSEEK	lib/user/syscall.h	/^   SYS_LSEEK,$/;"	e	enum:SYSCALL_NR
+SYS_MALLOC	lib/user/syscall.h	/^   SYS_MALLOC,$/;"	e	enum:SYSCALL_NR
+SYS_MKDIR	lib/user/syscall.h	/^   SYS_MKDIR,$/;"	e	enum:SYSCALL_NR
+SYS_OPEN	lib/user/syscall.h	/^   SYS_OPEN,$/;"	e	enum:SYSCALL_NR
+SYS_OPENDIR	lib/user/syscall.h	/^   SYS_OPENDIR,$/;"	e	enum:SYSCALL_NR
+SYS_PIPE	lib/user/syscall.h	/^   SYS_PIPE,$/;"	e	enum:SYSCALL_NR
+SYS_PS	lib/user/syscall.h	/^   SYS_PS,$/;"	e	enum:SYSCALL_NR
+SYS_PUTCHAR	lib/user/syscall.h	/^   SYS_PUTCHAR,$/;"	e	enum:SYSCALL_NR
+SYS_READ	lib/user/syscall.h	/^   SYS_READ,$/;"	e	enum:SYSCALL_NR
+SYS_READDIR	lib/user/syscall.h	/^   SYS_READDIR,$/;"	e	enum:SYSCALL_NR
+SYS_REWINDDIR	lib/user/syscall.h	/^   SYS_REWINDDIR,$/;"	e	enum:SYSCALL_NR
+SYS_RMDIR	lib/user/syscall.h	/^   SYS_RMDIR,$/;"	e	enum:SYSCALL_NR
+SYS_STAT	lib/user/syscall.h	/^   SYS_STAT,$/;"	e	enum:SYSCALL_NR
+SYS_UNLINK	lib/user/syscall.h	/^   SYS_UNLINK,$/;"	e	enum:SYSCALL_NR
+SYS_WAIT	lib/user/syscall.h	/^   SYS_WAIT,$/;"	e	enum:SYSCALL_NR
+SYS_WRITE	lib/user/syscall.h	/^   SYS_WRITE,$/;"	e	enum:SYSCALL_NR
+TASK_BLOCKED	thread/thread.h	/^   TASK_BLOCKED,$/;"	e	enum:task_status
+TASK_DIED	thread/thread.h	/^   TASK_DIED$/;"	e	enum:task_status
+TASK_HANGING	thread/thread.h	/^   TASK_HANGING,$/;"	e	enum:task_status
+TASK_NAME_LEN	thread/thread.h	8;"	d
+TASK_READY	thread/thread.h	/^   TASK_READY,$/;"	e	enum:task_status
+TASK_RUNNING	thread/thread.h	/^   TASK_RUNNING,$/;"	e	enum:task_status
+TASK_WAITING	thread/thread.h	/^   TASK_WAITING,$/;"	e	enum:task_status
+TI_GDT	kernel/global.h	34;"	d
+TI_GDT	lib/kernel/print.S	/^TI_GDT equ  0$/;"	d
+TI_LDT	kernel/global.h	35;"	d
+TSS_ATTR_HIGH	kernel/global.h	54;"	d
+TSS_ATTR_LOW	kernel/global.h	55;"	d
+TSS_DESC_D	kernel/global.h	52;"	d
+UNUSED	kernel/global.h	127;"	d
+USER_STACK3_VADDR	userprog/process.h	6;"	d
+USER_VADDR_START	userprog/process.h	7;"	d
+VECTOR	kernel/kernel.S	/^VECTOR 0x00,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x01,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x02,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x03,ZERO $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x04,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x05,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x06,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x07,ZERO $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x08,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x09,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x0a,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x0b,ERROR_CODE $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x0c,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x0d,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x0e,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x0f,ZERO $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x10,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x11,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x12,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x13,ZERO $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x14,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x15,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x16,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x17,ZERO $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x18,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x19,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x1a,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x1b,ERROR_CODE $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x1c,ZERO$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x1d,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x1e,ERROR_CODE$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x1f,ZERO $/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x20,ZERO	;时钟中断对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x21,ZERO	;键盘中断对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x22,ZERO	;级联用的$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x23,ZERO	;串口2对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x24,ZERO	;串口1对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x25,ZERO	;并口2对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x26,ZERO	;软盘对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x27,ZERO	;并口1对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x28,ZERO	;实时时钟对应的入口$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x29,ZERO	;重定向$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x2a,ZERO	;保留$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x2b,ZERO	;保留$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x2c,ZERO	;ps\/2鼠标$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x2d,ZERO	;fpu浮点单元异常$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x2e,ZERO	;硬盘$/;"	l
+VECTOR	kernel/kernel.S	/^VECTOR 0x2f,ZERO	;保留$/;"	l
+VIDEO_DESC	boot/loader.S	/^   VIDEO_DESC: dd    0x80000007	       ; limit=(0xbffff-0xb8000)\/4k=0x7$/;"	d
+__DEVICE_CONSOLE_H	device/console.h	2;"	d
+__DEVICE_IDE_H	device/ide.h	2;"	d
+__DEVICE_IOQUEUE_H	device/ioqueue.h	2;"	d
+__DEVICE_KEYBOARD_H	device/keyboard.h	2;"	d
+__DEVICE_TIME_H	device/timer.h	2;"	d
+__FS_DIR_H	fs/dir.h	2;"	d
+__FS_FILE_H	fs/file.h	2;"	d
+__FS_FS_H	fs/fs.h	2;"	d
+__FS_INODE_H	fs/inode.h	2;"	d
+__FS_SUPER_BLOCK_H	fs/super_block.h	2;"	d
+__KERNEL_DEBUG_H	kernel/debug.h	2;"	d
+__KERNEL_GLOBAL_H	kernel/global.h	2;"	d
+__KERNEL_INIT_H	kernel/init.h	2;"	d
+__KERNEL_INTERRUPT_H	kernel/interrupt.h	2;"	d
+__KERNEL_MEMORY_H	kernel/memory.h	2;"	d
+__KERNEL_SHELL_H	shell/shell.h	2;"	d
+__LIB_IO_H	lib/kernel/io.h	12;"	d
+__LIB_KERNEL_BITMAP_H	lib/kernel/bitmap.h	2;"	d
+__LIB_KERNEL_LIST_H	lib/kernel/list.h	2;"	d
+__LIB_KERNEL_PRINT_H	lib/kernel/print.h	2;"	d
+__LIB_KERNEL_STDIOSYS_H	lib/kernel/stdio-kernel.h	2;"	d
+__LIB_STDINT_H	lib/stdint.h	2;"	d
+__LIB_STDIO_H	lib/stdio.h	2;"	d
+__LIB_STRING_H	lib/string.h	2;"	d
+__LIB_USER_ASSERT_H	lib/user/assert.h	2;"	d
+__LIB_USER_SYSCALL_H	lib/user/syscall.h	2;"	d
+__SHELL_BUILDIN_CMD_H	shell/buildin_cmd.h	2;"	d
+__SHELL_PIPE_H	shell/pipe.h	2;"	d
+__THREAD_SYNC_H	thread/sync.h	2;"	d
+__THREAD_THREAD_H	thread/thread.h	2;"	d
+__USERPROG_EXEC_H	userprog/exec.h	2;"	d
+__USERPROG_FORK_H	userprog/fork.h	2;"	d
+__USERPROG_PROCESS_H	userprog/process.h	2;"	d
+__USERPROG_SYSCALLINIT_H	userprog/syscall-init.h	2;"	d
+__USERPROG_TSS_H	userprog/tss.h	2;"	d
+__USERPROG_WAITEXIT_H	userprog/wait_exit.h	2;"	d
+_start	command/start.S	/^_start:$/;"	l
+_syscall0	lib/user/syscall.c	4;"	d	file:
+_syscall1	lib/user/syscall.c	16;"	d	file:
+_syscall2	lib/user/syscall.c	28;"	d	file:
+_syscall3	lib/user/syscall.c	40;"	d	file:
+addr_v2p	kernel/memory.c	/^uint32_t addr_v2p(uint32_t vaddr) {$/;"	f
+all_list_tag	thread/thread.h	/^   struct list_elem all_list_tag;$/;"	m	struct:task_struct	typeref:struct:task_struct::list_elem
+allocate_pid	thread/thread.c	/^static pid_t allocate_pid(void) {$/;"	f	file:
+alt_l_char	device/keyboard.c	23;"	d	file:
+alt_l_make	device/keyboard.c	30;"	d	file:
+alt_r_break	device/keyboard.c	32;"	d	file:
+alt_r_char	device/keyboard.c	24;"	d	file:
+alt_r_make	device/keyboard.c	31;"	d	file:
+alt_status	device/keyboard.c	/^static bool ctrl_status, shift_status, alt_status, caps_lock_status, ext_scancode;$/;"	v	file:
+ards_nr	boot/loader.S	/^   ards_nr dw 0		      ;用于记录ards结构体数量$/;"	d
+arena	kernel/memory.c	/^struct arena {$/;"	s	file:
+arena2block	kernel/memory.c	/^static struct mem_block* arena2block(struct arena* a, uint32_t idx) {$/;"	f	file:
+argc	shell/shell.c	/^int32_t argc = -1;$/;"	v
+argv	shell/shell.c	/^char* argv[MAX_ARG_NR] = {NULL};$/;"	v
+assert	lib/user/assert.h	10;"	d
+assert	lib/user/assert.h	12;"	d
+attr_low_byte	kernel/global.h	/^   uint8_t  attr_low_byte;$/;"	m	struct:gdt_desc
+attribute	kernel/interrupt.c	/^   uint8_t     attribute;$/;"	m	struct:gate_desc	file:
+backlink	userprog/tss.c	/^    uint32_t backlink;$/;"	m	struct:tss	file:
+backspace	device/keyboard.c	12;"	d	file:
+base_high_byte	kernel/global.h	/^   uint8_t  base_high_byte;$/;"	m	struct:gdt_desc
+base_low_word	kernel/global.h	/^   uint16_t base_low_word;$/;"	m	struct:gdt_desc
+base_mid_byte	kernel/global.h	/^   uint8_t  base_mid_byte;$/;"	m	struct:gdt_desc
+bitmap	lib/kernel/bitmap.h	/^struct bitmap {$/;"	s
+bitmap_init	lib/kernel/bitmap.c	/^void bitmap_init(struct bitmap* btmp) {$/;"	f
+bitmap_scan	lib/kernel/bitmap.c	/^int bitmap_scan(struct bitmap* btmp, uint32_t cnt) {$/;"	f
+bitmap_scan_test	lib/kernel/bitmap.c	/^bool bitmap_scan_test(struct bitmap* btmp, uint32_t bit_idx) {$/;"	f
+bitmap_set	lib/kernel/bitmap.c	/^void bitmap_set(struct bitmap* btmp, uint32_t bit_idx, int8_t value) {$/;"	f
+bitmap_sync	fs/file.c	/^void bitmap_sync(struct partition* part, uint32_t bit_idx, uint8_t btmp_type) {$/;"	f
+bitmap_type	fs/file.h	/^enum bitmap_type {$/;"	g
+bits	lib/kernel/bitmap.h	/^   uint8_t* bits;$/;"	m	struct:bitmap
+block2arena	kernel/memory.c	/^static struct arena* block2arena(struct mem_block* b) {$/;"	f	file:
+block_bitmap	device/ide.h	/^   struct bitmap block_bitmap;	 \/\/ 块位图$/;"	m	struct:partition	typeref:struct:partition::bitmap
+block_bitmap_alloc	fs/file.c	/^int32_t block_bitmap_alloc(struct partition* part) {$/;"	f
+block_bitmap_lba	fs/super_block.h	/^   uint32_t block_bitmap_lba;	    \/\/ 块位图本身起始扇区地址$/;"	m	struct:super_block
+block_bitmap_sects	fs/super_block.h	/^   uint32_t block_bitmap_sects;     \/\/ 扇区位图本身占用的扇区数量$/;"	m	struct:super_block
+block_desc_init	kernel/memory.c	/^void block_desc_init(struct mem_block_desc* desc_array) {				   $/;"	f
+block_size	kernel/memory.h	/^   uint32_t block_size;		 \/\/ 内存块大小$/;"	m	struct:mem_block_desc
+blocks_per_arena	kernel/memory.h	/^   uint32_t blocks_per_arena;	 \/\/ 本arena中可容纳此mem_block的数量.$/;"	m	struct:mem_block_desc
+bool	kernel/global.h	121;"	d
+boot_sector	device/ide.c	/^struct boot_sector {$/;"	s	file:
+bootable	device/ide.c	/^   uint8_t  bootable;		 \/\/ 是否可引导	$/;"	m	struct:partition_table_entry	file:
+btmp_bytes_len	lib/kernel/bitmap.h	/^   uint32_t btmp_bytes_len;$/;"	m	struct:bitmap
+buf	device/ioqueue.h	/^    char buf[bufsize];			    \/\/ 缓冲区大小$/;"	m	struct:ioqueue
+bufsize	device/ioqueue.h	7;"	d
+build_child_stack	userprog/fork.c	/^static int32_t build_child_stack(struct task_struct* child_thread) {$/;"	f	file:
+buildin_cd	shell/buildin_cmd.c	/^char* buildin_cd(uint32_t argc, char** argv) {$/;"	f
+buildin_clear	shell/buildin_cmd.c	/^void buildin_clear(uint32_t argc, char** argv UNUSED) {$/;"	f
+buildin_help	shell/buildin_cmd.c	/^void buildin_help(uint32_t argc UNUSED, char** argv UNUSED) {$/;"	f
+buildin_ls	shell/buildin_cmd.c	/^void buildin_ls(uint32_t argc, char** argv) {$/;"	f
+buildin_mkdir	shell/buildin_cmd.c	/^int32_t buildin_mkdir(uint32_t argc, char** argv) {$/;"	f
+buildin_ps	shell/buildin_cmd.c	/^void buildin_ps(uint32_t argc, char** argv UNUSED) {$/;"	f
+buildin_pwd	shell/buildin_cmd.c	/^void buildin_pwd(uint32_t argc, char** argv UNUSED) {$/;"	f
+buildin_rm	shell/buildin_cmd.c	/^int32_t buildin_rm(uint32_t argc, char** argv) {$/;"	f
+buildin_rmdir	shell/buildin_cmd.c	/^int32_t buildin_rmdir(uint32_t argc, char** argv) {$/;"	f
+busy_wait	device/ide.c	/^static bool busy_wait(struct disk* hd) {$/;"	f	file:
+caps_lock_char	device/keyboard.c	25;"	d	file:
+caps_lock_make	device/keyboard.c	36;"	d	file:
+caps_lock_status	device/keyboard.c	/^static bool ctrl_status, shift_status, alt_status, caps_lock_status, ext_scancode;$/;"	v	file:
+channel_cnt	device/ide.c	/^uint8_t channel_cnt;	   \/\/ 按硬盘数计算的通道数$/;"	v
+channels	device/ide.c	/^struct ide_channel channels[2];	 \/\/ 有两个ide通道$/;"	v	typeref:struct:ide_channel
+char_invisible	device/keyboard.c	18;"	d	file:
+chdir	lib/user/syscall.c	/^int32_t chdir(const char* path) {$/;"	f
+clear	lib/user/syscall.c	/^void clear(void) {$/;"	f
+close	lib/user/syscall.c	/^int32_t close(int32_t fd) {$/;"	f
+closedir	lib/user/syscall.c	/^int32_t closedir(struct dir* dir) {$/;"	f
+cls_screen	lib/kernel/print.S	/^cls_screen:$/;"	l
+cmd_execute	shell/shell.c	/^static void cmd_execute(uint32_t argc, char** argv) {$/;"	f	file:
+cmd_line	shell/shell.c	/^static char cmd_line[MAX_PATH_LEN] = {0};$/;"	v	file:
+cmd_out	device/ide.c	/^static void cmd_out(struct ide_channel* channel, uint8_t cmd) {$/;"	f	file:
+cmd_parse	shell/shell.c	/^static int32_t cmd_parse(char* cmd_str, char** argv, char token) {$/;"	f	file:
+cnt	kernel/memory.c	/^   uint32_t cnt;$/;"	m	struct:arena	file:
+console_acquire	device/console.c	/^void console_acquire() {$/;"	f
+console_init	device/console.c	/^void console_init() {$/;"	f
+console_lock	device/console.c	/^static struct lock console_lock;    \/\/ 控制台锁$/;"	v	typeref:struct:lock	file:
+console_put_char	device/console.c	/^void console_put_char(uint8_t char_asci) {$/;"	f
+console_put_int	device/console.c	/^void console_put_int(uint32_t num) {$/;"	f
+console_put_str	device/console.c	/^void console_put_str(char* str) {$/;"	f
+console_release	device/console.c	/^void console_release() {$/;"	f
+consumer	device/ioqueue.h	/^    struct task_struct* consumer;$/;"	m	struct:ioqueue	typeref:struct:ioqueue::task_struct
+copy_body_stack3	userprog/fork.c	/^static void copy_body_stack3(struct task_struct* child_thread, struct task_struct* parent_thread, void* buf_page) {$/;"	f	file:
+copy_pcb_vaddrbitmap_stack0	userprog/fork.c	/^static int32_t copy_pcb_vaddrbitmap_stack0(struct task_struct* child_thread, struct task_struct* parent_thread) {$/;"	f	file:
+copy_process	userprog/fork.c	/^static int32_t copy_process(struct task_struct* child_thread, struct task_struct* parent_thread) {$/;"	f	file:
+cr3	userprog/tss.c	/^    uint32_t cr3;$/;"	m	struct:tss	file:
+create_dir_entry	fs/dir.c	/^void create_dir_entry(char* filename, uint32_t inode_no, uint8_t file_type, struct dir_entry* p_de) {$/;"	f
+create_page_dir	userprog/process.c	/^uint32_t* create_page_dir(void) {$/;"	f
+create_user_vaddr_bitmap	userprog/process.c	/^void create_user_vaddr_bitmap(struct task_struct* user_prog) {$/;"	f
+cs	thread/thread.h	/^    uint32_t cs;$/;"	m	struct:intr_stack
+cs	userprog/tss.c	/^    uint32_t cs;$/;"	m	struct:tss	file:
+ctrl_l_char	device/keyboard.c	19;"	d	file:
+ctrl_l_make	device/keyboard.c	33;"	d	file:
+ctrl_r_break	device/keyboard.c	35;"	d	file:
+ctrl_r_char	device/keyboard.c	20;"	d	file:
+ctrl_r_make	device/keyboard.c	34;"	d	file:
+ctrl_status	device/keyboard.c	/^static bool ctrl_status, shift_status, alt_status, caps_lock_status, ext_scancode;$/;"	v	file:
+cur_part	fs/fs.c	/^struct partition* cur_part;	 \/\/ 默认情况下操作的是哪个分区$/;"	v	typeref:struct:partition
+cwd_cache	shell/shell.c	/^char cwd_cache[MAX_PATH_LEN] = {0};$/;"	v
+cwd_inode_nr	thread/thread.h	/^   uint32_t cwd_inode_nr;	 \/\/ 进程所在的工作目录的inode编号$/;"	m	struct:task_struct
+data_start_lba	fs/super_block.h	/^   uint32_t data_start_lba;	    \/\/ 数据区开始的第一个扇区号$/;"	m	struct:super_block
+dcount	kernel/interrupt.c	/^   uint8_t     dcount;   \/\/此项为双字计数字段，是门描述符中的第4字节。此项固定值，不用考虑$/;"	m	struct:gate_desc	file:
+default_prio	userprog/process.h	5;"	d
+delete	device/keyboard.c	15;"	d	file:
+delete_dir_entry	fs/dir.c	/^bool delete_dir_entry(struct partition* part, struct dir* pdir, uint32_t inode_no, void* io_buf) {$/;"	f
+desc	kernel/memory.c	/^   struct mem_block_desc* desc;	 \/\/ 此arena关联的mem_block_desc$/;"	m	struct:arena	typeref:struct:arena::mem_block_desc	file:
+dev_no	device/ide.h	/^   uint8_t dev_no;			   \/\/ 本硬盘是主0还是从1$/;"	m	struct:disk
+devices	device/ide.h	/^   struct disk devices[2];	 \/\/ 一个通道上连接两个硬盘，一主一从$/;"	m	struct:ide_channel	typeref:struct:ide_channel::disk
+dir	fs/dir.h	/^struct dir {$/;"	s
+dir_buf	fs/dir.h	/^   uint8_t dir_buf[512];  \/\/ 目录的数据缓存$/;"	m	struct:dir
+dir_close	fs/dir.c	/^void dir_close(struct dir* dir) {$/;"	f
+dir_entry	fs/dir.h	/^struct dir_entry {$/;"	s
+dir_entry_size	fs/super_block.h	/^   uint32_t dir_entry_size;	    \/\/ 目录项大小$/;"	m	struct:super_block
+dir_is_empty	fs/dir.c	/^bool dir_is_empty(struct dir* dir) {$/;"	f
+dir_open	fs/dir.c	/^struct dir* dir_open(struct partition* part, uint32_t inode_no) {$/;"	f
+dir_pos	fs/dir.h	/^   uint32_t dir_pos;	  \/\/ 记录在目录内的偏移$/;"	m	struct:dir
+dir_read	fs/dir.c	/^struct dir_entry* dir_read(struct dir* dir) {$/;"	f
+dir_remove	fs/dir.c	/^int32_t dir_remove(struct dir* parent_dir, struct dir* child_dir) {$/;"	f
+disk	device/ide.h	/^struct disk {$/;"	s
+disk_done	device/ide.h	/^   struct semaphore disk_done;	 \/\/ 硬盘处理完成.线程用这个信号量来阻塞自己，由硬盘完成后产生的中断将线程唤醒$/;"	m	struct:ide_channel	typeref:struct:ide_channel::semaphore
+ds	thread/thread.h	/^    uint32_t ds;$/;"	m	struct:intr_stack
+ds	userprog/tss.c	/^    uint32_t ds;$/;"	m	struct:tss	file:
+e_ehsize	userprog/exec.c	/^   Elf32_Half    e_ehsize;$/;"	m	struct:Elf32_Ehdr	file:
+e_entry	userprog/exec.c	/^   Elf32_Addr    e_entry;$/;"	m	struct:Elf32_Ehdr	file:
+e_flags	userprog/exec.c	/^   Elf32_Word    e_flags;$/;"	m	struct:Elf32_Ehdr	file:
+e_ident	userprog/exec.c	/^   unsigned char e_ident[16];$/;"	m	struct:Elf32_Ehdr	file:
+e_machine	userprog/exec.c	/^   Elf32_Half    e_machine;$/;"	m	struct:Elf32_Ehdr	file:
+e_phentsize	userprog/exec.c	/^   Elf32_Half    e_phentsize;$/;"	m	struct:Elf32_Ehdr	file:
+e_phnum	userprog/exec.c	/^   Elf32_Half    e_phnum;$/;"	m	struct:Elf32_Ehdr	file:
+e_phoff	userprog/exec.c	/^   Elf32_Off     e_phoff;$/;"	m	struct:Elf32_Ehdr	file:
+e_shentsize	userprog/exec.c	/^   Elf32_Half    e_shentsize;$/;"	m	struct:Elf32_Ehdr	file:
+e_shnum	userprog/exec.c	/^   Elf32_Half    e_shnum;$/;"	m	struct:Elf32_Ehdr	file:
+e_shoff	userprog/exec.c	/^   Elf32_Off     e_shoff;$/;"	m	struct:Elf32_Ehdr	file:
+e_shstrndx	userprog/exec.c	/^   Elf32_Half    e_shstrndx;$/;"	m	struct:Elf32_Ehdr	file:
+e_type	userprog/exec.c	/^   Elf32_Half    e_type;$/;"	m	struct:Elf32_Ehdr	file:
+e_version	userprog/exec.c	/^   Elf32_Word    e_version;$/;"	m	struct:Elf32_Ehdr	file:
+eax	thread/thread.h	/^    uint32_t eax;$/;"	m	struct:intr_stack
+eax	userprog/tss.c	/^    uint32_t eax;$/;"	m	struct:tss	file:
+ebp	thread/thread.h	/^    uint32_t ebp;$/;"	m	struct:intr_stack
+ebp	thread/thread.h	/^   uint32_t ebp;$/;"	m	struct:thread_stack
+ebp	userprog/tss.c	/^    uint32_t ebp;$/;"	m	struct:tss	file:
+ebx	thread/thread.h	/^    uint32_t ebx;$/;"	m	struct:intr_stack
+ebx	thread/thread.h	/^   uint32_t ebx;$/;"	m	struct:thread_stack
+ebx	userprog/tss.c	/^    uint32_t ebx;$/;"	m	struct:tss	file:
+ecx	thread/thread.h	/^    uint32_t ecx;$/;"	m	struct:intr_stack
+ecx	userprog/tss.c	/^    uint32_t ecx;$/;"	m	struct:tss	file:
+edi	thread/thread.h	/^    uint32_t edi;$/;"	m	struct:intr_stack
+edi	thread/thread.h	/^   uint32_t edi;$/;"	m	struct:thread_stack
+edi	userprog/tss.c	/^    uint32_t edi;$/;"	m	struct:tss	file:
+edx	thread/thread.h	/^    uint32_t edx;$/;"	m	struct:intr_stack
+edx	userprog/tss.c	/^    uint32_t edx;$/;"	m	struct:tss	file:
+eflags	thread/thread.h	/^    uint32_t eflags;$/;"	m	struct:intr_stack
+eflags	userprog/tss.c	/^    uint32_t eflags;$/;"	m	struct:tss	file:
+eip	thread/thread.h	/^    void (*eip) (void);$/;"	m	struct:intr_stack
+eip	thread/thread.h	/^   void (*eip) (thread_func* func, void* func_arg);$/;"	m	struct:thread_stack
+eip	userprog/tss.c	/^    uint32_t (*eip) (void);$/;"	m	struct:tss	file:
+elapsed_ticks	thread/thread.h	/^   uint32_t elapsed_ticks;$/;"	m	struct:task_struct
+elem2entry	lib/kernel/list.h	6;"	d
+elem2thread_info	thread/thread.c	/^static bool elem2thread_info(struct list_elem* pelem, int arg UNUSED) {$/;"	f	file:
+elem_find	lib/kernel/list.c	/^bool elem_find(struct list* plist, struct list_elem* obj_elem) {$/;"	f
+end_chs	device/ide.c	/^   uint8_t  end_chs;		 \/\/ 结束柱面号$/;"	m	struct:partition_table_entry	file:
+end_head	device/ide.c	/^   uint8_t  end_head;		 \/\/ 结束磁头号$/;"	m	struct:partition_table_entry	file:
+end_sec	device/ide.c	/^   uint8_t  end_sec;		 \/\/ 结束扇区号$/;"	m	struct:partition_table_entry	file:
+enter	device/keyboard.c	14;"	d	file:
+enter_kernel	boot/loader.S	/^enter_kernel:    $/;"	l
+err_code	thread/thread.h	/^    uint32_t err_code;		 \/\/ err_code会被压入在eip之后$/;"	m	struct:intr_stack
+es	thread/thread.h	/^    uint32_t es;$/;"	m	struct:intr_stack
+es	userprog/tss.c	/^    uint32_t es;$/;"	m	struct:tss	file:
+esc	device/keyboard.c	11;"	d	file:
+esi	thread/thread.h	/^    uint32_t esi;$/;"	m	struct:intr_stack
+esi	thread/thread.h	/^   uint32_t esi;$/;"	m	struct:thread_stack
+esi	userprog/tss.c	/^    uint32_t esi;$/;"	m	struct:tss	file:
+esp	thread/thread.h	/^    void* esp;$/;"	m	struct:intr_stack
+esp	userprog/tss.c	/^    uint32_t esp;$/;"	m	struct:tss	file:
+esp0	userprog/tss.c	/^    uint32_t* esp0;$/;"	m	struct:tss	file:
+esp1	userprog/tss.c	/^    uint32_t* esp1;$/;"	m	struct:tss	file:
+esp2	userprog/tss.c	/^    uint32_t* esp2;$/;"	m	struct:tss	file:
+esp_dummy	thread/thread.h	/^    uint32_t esp_dummy;	 \/\/ 虽然pushad把esp也压入,但esp是不断变化的,所以会被popad忽略$/;"	m	struct:intr_stack
+exception_init	kernel/interrupt.c	/^static void exception_init(void) {			    \/\/ 完成一般中断处理函数注册及异常名称注册$/;"	f	file:
+execv	lib/user/syscall.c	/^int32_t execv(const char* pathname, char** argv) {$/;"	f
+exit	lib/user/syscall.c	/^void exit(int32_t status) {$/;"	f
+exit_status	thread/thread.h	/^   int8_t  exit_status;         \/\/ 进程结束时自己调用exit传入的参数$/;"	m	struct:task_struct
+expecting_intr	device/ide.h	/^   bool expecting_intr;		 \/\/ 向硬盘发完命令后等待来自硬盘的中断$/;"	m	struct:ide_channel
+ext_lba_base	device/ide.c	/^int32_t ext_lba_base = 0;$/;"	v
+ext_scancode	device/keyboard.c	/^static bool ctrl_status, shift_status, alt_status, caps_lock_status, ext_scancode;$/;"	v	file:
+extern	command/start.S	/^extern	 exit $/;"	l
+extern	command/start.S	/^extern	 main$/;"	l
+extern	kernel/kernel.S	/^extern idt_table		 ;idt_table是C中注册的中断处理程序数组$/;"	l
+extern	kernel/kernel.S	/^extern syscall_table$/;"	l
+f	makefile	/^	dd if=$(BUILD_DIR)\/kernel.bin \\$/;"	m
+f	makefile	/^	dd if=$(BUILD_DIR)\/loader.bin of=hd3M.img bs=512 count=4 seek=2 conv=notrunc$/;"	m
+f_type	fs/dir.h	/^   enum file_types f_type;	      \/\/ 文件类型$/;"	m	struct:dir_entry	typeref:enum:dir_entry::file_types
+false	kernel/global.h	123;"	d
+fd_flag	fs/file.h	/^   uint32_t fd_flag;$/;"	m	struct:file
+fd_inode	fs/file.h	/^   struct inode* fd_inode;$/;"	m	struct:file	typeref:struct:file::inode
+fd_local2global	fs/fs.c	/^uint32_t fd_local2global(uint32_t local_fd) {$/;"	f
+fd_pos	fs/file.h	/^   uint32_t fd_pos;      \/\/ 记录当前文件操作的偏移地址,以0为起始,最大为文件大小-1$/;"	m	struct:file
+fd_redirect	lib/user/syscall.c	/^void fd_redirect(uint32_t old_local_fd, uint32_t new_local_fd) {$/;"	f
+fd_table	thread/thread.h	/^   int32_t fd_table[MAX_FILES_OPEN_PER_PROC];	\/\/ 已打开文件数组$/;"	m	struct:task_struct
+file	fs/file.h	/^struct file {$/;"	s
+file_close	fs/file.c	/^int32_t file_close(struct file* file) {$/;"	f
+file_create	fs/file.c	/^int32_t file_create(struct dir* parent_dir, char* filename, uint8_t flag) {$/;"	f
+file_open	fs/file.c	/^int32_t file_open(uint32_t inode_no, uint8_t flag) {$/;"	f
+file_read	fs/file.c	/^int32_t file_read(struct file* file, void* buf, uint32_t count) {$/;"	f
+file_table	fs/file.c	/^struct file file_table[MAX_FILE_OPEN];$/;"	v	typeref:struct:file
+file_type	fs/fs.h	/^   enum file_types file_type;		    \/\/ 找到的是普通文件还是目录,找不到将为未知类型(FT_UNKNOWN)$/;"	m	struct:path_search_record	typeref:enum:path_search_record::file_types
+file_types	fs/fs.h	/^enum file_types {$/;"	g
+file_write	fs/file.c	/^int32_t file_write(struct file* file, const void* buf, uint32_t count) {$/;"	f
+filename	fs/dir.h	/^   char filename[MAX_FILE_NAME_LEN];  \/\/ 普通文件或目录名称$/;"	m	struct:dir_entry
+filesys_init	fs/fs.c	/^void filesys_init() {$/;"	f
+final_path	shell/shell.c	/^char final_path[MAX_PATH_LEN] = {0};      \/\/ 用于洗路径时的缓冲$/;"	v
+find_child	userprog/wait_exit.c	/^static bool find_child(struct list_elem* pelem, int32_t ppid) {$/;"	f	file:
+find_hanging_child	userprog/wait_exit.c	/^static bool find_hanging_child(struct list_elem* pelem, int32_t ppid) {$/;"	f	file:
+fork	lib/user/syscall.c	/^pid_t fork(void){$/;"	f
+fork_pid	thread/thread.c	/^pid_t fork_pid(void) {$/;"	f
+free	lib/user/syscall.c	/^void free(void* ptr) {$/;"	f
+free_a_phy_page	kernel/memory.c	/^void free_a_phy_page(uint32_t pg_phy_addr) {$/;"	f
+free_elem	kernel/memory.h	/^   struct list_elem free_elem;$/;"	m	struct:mem_block	typeref:struct:mem_block::list_elem
+free_list	kernel/memory.h	/^   struct list free_list;	 \/\/ 目前可用的mem_block链表$/;"	m	struct:mem_block_desc	typeref:struct:mem_block_desc::list
+frequency_set	device/timer.c	/^static void frequency_set(uint8_t counter_port, \\$/;"	f	file:
+fs	thread/thread.h	/^    uint32_t fs;$/;"	m	struct:intr_stack
+fs	userprog/tss.c	/^    uint32_t fs;$/;"	m	struct:tss	file:
+fs_type	device/ide.c	/^   uint8_t  fs_type;		 \/\/ 分区类型$/;"	m	struct:partition_table_entry	file:
+func_arg	thread/thread.h	/^   void* func_arg;    \/\/ 由Kernel_thread所调用的函数所需的参数$/;"	m	struct:thread_stack
+func_offset_high_word	kernel/interrupt.c	/^   uint16_t    func_offset_high_word;$/;"	m	struct:gate_desc	file:
+func_offset_low_word	kernel/interrupt.c	/^   uint16_t    func_offset_low_word;$/;"	m	struct:gate_desc	file:
+function	lib/kernel/list.h	/^typedef bool (function)(struct list_elem*, int arg);$/;"	t
+function	thread/thread.h	/^   thread_func* function;   \/\/ 由Kernel_thread所调用的函数名$/;"	m	struct:thread_stack
+gate_desc	kernel/interrupt.c	/^struct gate_desc {$/;"	s	file:
+gdt_desc	kernel/global.h	/^struct gdt_desc {$/;"	s
+gdt_ptr	boot/loader.S	/^   gdt_ptr  dw  GDT_LIMIT $/;"	d
+general_intr_handler	kernel/interrupt.c	/^static void general_intr_handler(uint8_t vec_nr) {$/;"	f	file:
+general_tag	thread/thread.h	/^   struct list_elem general_tag;				    $/;"	m	struct:task_struct	typeref:struct:task_struct::list_elem
+get_a_page	kernel/memory.c	/^void* get_a_page(enum pool_flags pf, uint32_t vaddr) {$/;"	f
+get_a_page_without_opvaddrbitmap	kernel/memory.c	/^void* get_a_page_without_opvaddrbitmap(enum pool_flags pf, uint32_t vaddr) {$/;"	f
+get_child_dir_name	fs/fs.c	/^static int get_child_dir_name(uint32_t p_inode_nr, uint32_t c_inode_nr, char* path, void* io_buf) {$/;"	f	file:
+get_free_slot_in_global	fs/file.c	/^int32_t get_free_slot_in_global(void) {$/;"	f
+get_kernel_pages	kernel/memory.c	/^void* get_kernel_pages(uint32_t pg_cnt) {$/;"	f
+get_parent_dir_inode_nr	fs/fs.c	/^static uint32_t get_parent_dir_inode_nr(uint32_t child_inode_nr, void* io_buf) {$/;"	f	file:
+get_user_pages	kernel/memory.c	/^void* get_user_pages(uint32_t pg_cnt) {$/;"	f
+getcwd	lib/user/syscall.c	/^char* getcwd(char* buf, uint32_t size) {$/;"	f
+getpid	lib/user/syscall.c	/^uint32_t getpid() {$/;"	f
+global	command/start.S	/^global _start$/;"	l
+global	kernel/kernel.S	/^global intr_entry_table$/;"	l
+global	kernel/kernel.S	/^global intr_exit$/;"	l
+global	kernel/kernel.S	/^global syscall_handler$/;"	l
+global	lib/kernel/print.S	/^global cls_screen$/;"	l
+global	lib/kernel/print.S	/^global put_char$/;"	l
+global	lib/kernel/print.S	/^global put_int$/;"	l
+global	lib/kernel/print.S	/^global put_str$/;"	l
+global	lib/kernel/print.S	/^global set_cursor$/;"	l
+global	thread/switch.S	/^global switch_to$/;"	l
+gs	thread/thread.h	/^    uint32_t gs;$/;"	m	struct:intr_stack
+gs	userprog/tss.c	/^    uint32_t gs;$/;"	m	struct:tss	file:
+head	device/ioqueue.h	/^    int32_t head;			    \/\/ 队首,数据往队首处写入$/;"	m	struct:ioqueue
+head	lib/kernel/list.h	/^   struct list_elem head;$/;"	m	struct:list	typeref:struct:list::list_elem
+help	lib/user/syscall.c	/^void help(void) {$/;"	f
+holder	thread/sync.h	/^   struct   task_struct* holder;	    \/\/ 锁的持有者$/;"	m	struct:lock	typeref:struct:lock::task_struct
+holder_repeat_nr	thread/sync.h	/^   uint32_t holder_repeat_nr;		    \/\/ 锁的持有者重复申请锁的次数$/;"	m	struct:lock
+i_no	fs/dir.h	/^   uint32_t i_no;		      \/\/ 普通文件或目录对应的inode编号$/;"	m	struct:dir_entry
+i_no	fs/inode.h	/^   uint32_t i_no;    \/\/ inode编号$/;"	m	struct:inode
+i_open_cnts	fs/inode.h	/^   uint32_t i_open_cnts;   \/\/ 记录此文件被打开的次数$/;"	m	struct:inode
+i_sectors	fs/inode.h	/^   uint32_t i_sectors[13];$/;"	m	struct:inode
+i_size	fs/inode.h	/^   uint32_t i_size;$/;"	m	struct:inode
+ide_channel	device/ide.h	/^struct ide_channel {$/;"	s
+ide_init	device/ide.c	/^void ide_init() {$/;"	f
+ide_read	device/ide.c	/^void ide_read(struct disk* hd, uint32_t lba, void* buf, uint32_t sec_cnt) {   \/\/ 此处的sec_cnt为32位大小$/;"	f
+ide_write	device/ide.c	/^void ide_write(struct disk* hd, uint32_t lba, void* buf, uint32_t sec_cnt) {$/;"	f
+identify_disk	device/ide.c	/^static void identify_disk(struct disk* hd) {$/;"	f	file:
+idle	thread/thread.c	/^static void idle(void* arg UNUSED) {$/;"	f	file:
+idle_thread	thread/thread.c	/^struct task_struct* idle_thread;    \/\/ idle线程$/;"	v	typeref:struct:task_struct
+idt	kernel/interrupt.c	/^static struct gate_desc idt[IDT_DESC_CNT];   \/\/ idt是中断描述符表,本质上就是个中断门描述符数组$/;"	v	typeref:struct:gate_desc	file:
+idt_desc_init	kernel/interrupt.c	/^static void idt_desc_init(void) {$/;"	f	file:
+idt_init	kernel/interrupt.c	/^void idt_init() {$/;"	f
+idt_table	kernel/interrupt.c	/^intr_handler idt_table[IDT_DESC_CNT];$/;"	v
+inb	lib/kernel/io.h	/^static inline uint8_t inb(uint16_t port) {$/;"	f
+init	kernel/main.c	/^void init(void) {$/;"	f
+init_adopt_a_child	userprog/wait_exit.c	/^static bool init_adopt_a_child(struct list_elem* pelem, int32_t pid) {$/;"	f	file:
+init_all	kernel/init.c	/^void init_all() {$/;"	f
+init_thread	thread/thread.c	/^void init_thread(struct task_struct* pthread, char* name, int prio) {$/;"	f
+inode	fs/dir.h	/^   struct inode* inode;   $/;"	m	struct:dir	typeref:struct:dir::inode
+inode	fs/inode.h	/^struct inode {$/;"	s
+inode_bitmap	device/ide.h	/^   struct bitmap inode_bitmap;	 \/\/ i结点位图$/;"	m	struct:partition	typeref:struct:partition::bitmap
+inode_bitmap_alloc	fs/file.c	/^int32_t inode_bitmap_alloc(struct partition* part) {$/;"	f
+inode_bitmap_lba	fs/super_block.h	/^   uint32_t inode_bitmap_lba;	    \/\/ i结点位图起始扇区lba地址$/;"	m	struct:super_block
+inode_bitmap_sects	fs/super_block.h	/^   uint32_t inode_bitmap_sects;	    \/\/ i结点位图占用的扇区数量$/;"	m	struct:super_block
+inode_close	fs/inode.c	/^void inode_close(struct inode* inode) {$/;"	f
+inode_cnt	fs/super_block.h	/^   uint32_t inode_cnt;		    \/\/ 本分区中inode数量$/;"	m	struct:super_block
+inode_delete	fs/inode.c	/^void inode_delete(struct partition* part, uint32_t inode_no, void* io_buf) {$/;"	f
+inode_init	fs/inode.c	/^void inode_init(uint32_t inode_no, struct inode* new_inode) {$/;"	f
+inode_locate	fs/inode.c	/^static void inode_locate(struct partition* part, uint32_t inode_no, struct inode_position* inode_pos) {$/;"	f	file:
+inode_open	fs/inode.c	/^struct inode* inode_open(struct partition* part, uint32_t inode_no) {$/;"	f
+inode_position	fs/inode.c	/^struct inode_position {$/;"	s	file:
+inode_release	fs/inode.c	/^void inode_release(struct partition* part, uint32_t inode_no) {$/;"	f
+inode_sync	fs/inode.c	/^void inode_sync(struct partition* part, struct inode* inode, void* io_buf) {	 \/\/ io_buf是用于硬盘io的缓冲区$/;"	f
+inode_table_lba	fs/super_block.h	/^   uint32_t inode_table_lba;	    \/\/ i结点表起始扇区lba地址$/;"	m	struct:super_block
+inode_table_sects	fs/super_block.h	/^   uint32_t inode_table_sects;	    \/\/ i结点表占用的扇区数量$/;"	m	struct:super_block
+inode_tag	fs/inode.h	/^   struct list_elem inode_tag;$/;"	m	struct:inode	typeref:struct:inode::list_elem
+insw	lib/kernel/io.h	/^static inline void insw(uint16_t port, void* addr, uint32_t word_cnt) {$/;"	f
+int16_t	lib/stdint.h	/^typedef signed short int int16_t;$/;"	t
+int32_t	lib/stdint.h	/^typedef signed int int32_t;$/;"	t
+int64_t	lib/stdint.h	/^typedef signed long long int int64_t;$/;"	t
+int8_t	lib/stdint.h	/^typedef signed char int8_t;$/;"	t
+intr0x00entry	kernel/kernel.asm	/^intr0x00entry:$/;"	l
+intr0x01entry	kernel/kernel.asm	/^intr0x01entry:$/;"	l
+intr0x02entry	kernel/kernel.asm	/^intr0x02entry:$/;"	l
+intr0x03entry	kernel/kernel.asm	/^intr0x03entry:$/;"	l
+intr0x04entry	kernel/kernel.asm	/^intr0x04entry:$/;"	l
+intr0x05entry	kernel/kernel.asm	/^intr0x05entry:$/;"	l
+intr0x06entry	kernel/kernel.asm	/^intr0x06entry:$/;"	l
+intr0x07entry	kernel/kernel.asm	/^intr0x07entry:$/;"	l
+intr0x08entry	kernel/kernel.asm	/^intr0x08entry:$/;"	l
+intr0x09entry	kernel/kernel.asm	/^intr0x09entry:$/;"	l
+intr0x0aentry	kernel/kernel.asm	/^intr0x0aentry:$/;"	l
+intr0x0bentry	kernel/kernel.asm	/^intr0x0bentry:$/;"	l
+intr0x0centry	kernel/kernel.asm	/^intr0x0centry:$/;"	l
+intr0x0dentry	kernel/kernel.asm	/^intr0x0dentry:$/;"	l
+intr0x0eentry	kernel/kernel.asm	/^intr0x0eentry:$/;"	l
+intr0x0fentry	kernel/kernel.asm	/^intr0x0fentry:$/;"	l
+intr0x10entry	kernel/kernel.asm	/^intr0x10entry:$/;"	l
+intr0x11entry	kernel/kernel.asm	/^intr0x11entry:$/;"	l
+intr0x12entry	kernel/kernel.asm	/^intr0x12entry:$/;"	l
+intr0x13entry	kernel/kernel.asm	/^intr0x13entry:$/;"	l
+intr0x14entry	kernel/kernel.asm	/^intr0x14entry:$/;"	l
+intr0x15entry	kernel/kernel.asm	/^intr0x15entry:$/;"	l
+intr0x16entry	kernel/kernel.asm	/^intr0x16entry:$/;"	l
+intr0x17entry	kernel/kernel.asm	/^intr0x17entry:$/;"	l
+intr0x18entry	kernel/kernel.asm	/^intr0x18entry:$/;"	l
+intr0x19entry	kernel/kernel.asm	/^intr0x19entry:$/;"	l
+intr0x1aentry	kernel/kernel.asm	/^intr0x1aentry:$/;"	l
+intr0x1bentry	kernel/kernel.asm	/^intr0x1bentry:$/;"	l
+intr0x1centry	kernel/kernel.asm	/^intr0x1centry:$/;"	l
+intr0x1dentry	kernel/kernel.asm	/^intr0x1dentry:$/;"	l
+intr0x1eentry	kernel/kernel.asm	/^intr0x1eentry:$/;"	l
+intr0x1fentry	kernel/kernel.asm	/^intr0x1fentry:$/;"	l
+intr0x20entry	kernel/kernel.asm	/^intr0x20entry:$/;"	l
+intr0x21entry	kernel/kernel.asm	/^intr0x21entry:$/;"	l
+intr0x22entry	kernel/kernel.asm	/^intr0x22entry:$/;"	l
+intr0x23entry	kernel/kernel.asm	/^intr0x23entry:$/;"	l
+intr0x24entry	kernel/kernel.asm	/^intr0x24entry:$/;"	l
+intr0x25entry	kernel/kernel.asm	/^intr0x25entry:$/;"	l
+intr0x26entry	kernel/kernel.asm	/^intr0x26entry:$/;"	l
+intr0x27entry	kernel/kernel.asm	/^intr0x27entry:$/;"	l
+intr0x28entry	kernel/kernel.asm	/^intr0x28entry:$/;"	l
+intr0x29entry	kernel/kernel.asm	/^intr0x29entry:$/;"	l
+intr0x2aentry	kernel/kernel.asm	/^intr0x2aentry:$/;"	l
+intr0x2bentry	kernel/kernel.asm	/^intr0x2bentry:$/;"	l
+intr0x2centry	kernel/kernel.asm	/^intr0x2centry:$/;"	l
+intr0x2dentry	kernel/kernel.asm	/^intr0x2dentry:$/;"	l
+intr0x2eentry	kernel/kernel.asm	/^intr0x2eentry:$/;"	l
+intr0x2fentry	kernel/kernel.asm	/^intr0x2fentry:$/;"	l
+intr_disable	kernel/interrupt.c	/^enum intr_status intr_disable() {     $/;"	f
+intr_enable	kernel/interrupt.c	/^enum intr_status intr_enable() {$/;"	f
+intr_entry_table	kernel/kernel.S	/^intr_entry_table:$/;"	l
+intr_entry_table	kernel/kernel.asm	/^intr_entry_table:$/;"	l
+intr_exit	kernel/kernel.S	/^intr_exit:	     $/;"	l
+intr_exit	kernel/kernel.asm	/^intr_exit:$/;"	l
+intr_get_status	kernel/interrupt.c	/^enum intr_status intr_get_status() {$/;"	f
+intr_handler	kernel/interrupt.h	/^typedef void* intr_handler;$/;"	t
+intr_hd_handler	device/ide.c	/^void intr_hd_handler(uint8_t irq_no) {$/;"	f
+intr_keyboard_handler	device/keyboard.c	/^static void intr_keyboard_handler(void) {$/;"	f	file:
+intr_name	kernel/interrupt.c	/^char* intr_name[IDT_DESC_CNT];		     \/\/ 用于保存异常的名字$/;"	v
+intr_set_status	kernel/interrupt.c	/^enum intr_status intr_set_status(enum intr_status status) {$/;"	f
+intr_stack	thread/thread.h	/^struct intr_stack {$/;"	s
+intr_status	kernel/interrupt.h	/^enum intr_status {		 \/\/ 中断状态$/;"	g
+intr_timer_handler	device/timer.c	/^static void intr_timer_handler(void) {$/;"	f	file:
+io_base	userprog/tss.c	/^    uint32_t io_base;$/;"	m	struct:tss	file:
+ioq_empty	device/ioqueue.c	/^static bool ioq_empty(struct ioqueue* ioq) {$/;"	f	file:
+ioq_full	device/ioqueue.c	/^bool ioq_full(struct ioqueue* ioq) {$/;"	f
+ioq_getchar	device/ioqueue.c	/^char ioq_getchar(struct ioqueue* ioq) {$/;"	f
+ioq_length	device/ioqueue.c	/^uint32_t ioq_length(struct ioqueue* ioq) {$/;"	f
+ioq_putchar	device/ioqueue.c	/^void ioq_putchar(struct ioqueue* ioq, char byte) {$/;"	f
+ioq_wait	device/ioqueue.c	/^static void ioq_wait(struct task_struct** waiter) {$/;"	f	file:
+ioqueue	device/ioqueue.h	/^struct ioqueue {$/;"	s
+ioqueue_init	device/ioqueue.c	/^void ioqueue_init(struct ioqueue* ioq) {$/;"	f
+irq_no	device/ide.h	/^   uint8_t irq_no;		 \/\/ 本通道所用的中断号$/;"	m	struct:ide_channel
+is_pipe	shell/pipe.c	/^bool is_pipe(uint32_t local_fd) {$/;"	f
+itoa	lib/stdio.c	/^static void itoa(uint32_t value, char** buf_ptr_addr, uint8_t base) {$/;"	f	file:
+k_block_descs	kernel/memory.c	/^struct mem_block_desc k_block_descs[DESC_CNT];	\/\/ 内核内存块描述符数组$/;"	v	typeref:struct:mem_block_desc
+kbd_buf	device/keyboard.c	/^struct ioqueue kbd_buf;	   \/\/ 定义键盘缓冲区$/;"	v	typeref:struct:ioqueue
+kernel_init	boot/loader.S	/^kernel_init:$/;"	l
+kernel_pool	kernel/memory.c	/^struct pool kernel_pool, user_pool;      \/\/ 生成内核内存池和用户内存池$/;"	v	typeref:struct:pool
+kernel_thread	thread/thread.c	/^static void kernel_thread(thread_func* function, void* func_arg) {$/;"	f	file:
+kernel_vaddr	kernel/memory.c	/^struct virtual_addr kernel_vaddr;	 \/\/ 此结构是用来给内核分配虚拟地址$/;"	v	typeref:struct:virtual_addr
+keyboard_init	device/keyboard.c	/^void keyboard_init() {$/;"	f
+keymap	device/keyboard.c	/^static char keymap[][2] = {$/;"	v	file:
+l_no	device/ide.c	/^uint8_t p_no = 0, l_no = 0;	 \/\/ 用来记录硬盘主分区和逻辑分区的下标$/;"	v
+large	kernel/memory.c	/^   bool large;		   $/;"	m	struct:arena	file:
+ldt	userprog/tss.c	/^    uint32_t ldt;$/;"	m	struct:tss	file:
+limit_high_attr_high	kernel/global.h	/^   uint8_t  limit_high_attr_high;$/;"	m	struct:gdt_desc
+limit_low_word	kernel/global.h	/^   uint16_t limit_low_word;$/;"	m	struct:gdt_desc
+list	lib/kernel/list.h	/^struct list {$/;"	s
+list_append	lib/kernel/list.c	/^void list_append(struct list* plist, struct list_elem* elem) {$/;"	f
+list_elem	lib/kernel/list.h	/^struct list_elem {$/;"	s
+list_empty	lib/kernel/list.c	/^bool list_empty(struct list* plist) {		\/\/ 判断队列是否为空$/;"	f
+list_init	lib/kernel/list.c	/^void list_init (struct list* list) {$/;"	f
+list_insert_before	lib/kernel/list.c	/^void list_insert_before(struct list_elem* before, struct list_elem* elem) { $/;"	f
+list_len	lib/kernel/list.c	/^uint32_t list_len(struct list* plist) {$/;"	f
+list_pop	lib/kernel/list.c	/^struct list_elem* list_pop(struct list* plist) {$/;"	f
+list_push	lib/kernel/list.c	/^void list_push(struct list* plist, struct list_elem* elem) {$/;"	f
+list_remove	lib/kernel/list.c	/^void list_remove(struct list_elem* pelem) {$/;"	f
+list_traversal	lib/kernel/list.c	/^struct list_elem* list_traversal(struct list* plist, function func, int arg) {$/;"	f
+load	userprog/exec.c	/^static int32_t load(const char* pathname) {$/;"	f	file:
+loader_start	boot/loader.S	/^   loader_start:$/;"	l
+lock	device/ide.h	/^   struct lock lock;$/;"	m	struct:ide_channel	typeref:struct:ide_channel::lock
+lock	device/ioqueue.h	/^    struct lock lock;$/;"	m	struct:ioqueue	typeref:struct:ioqueue::lock
+lock	kernel/memory.c	/^   struct lock lock;		 \/\/ 申请内存时互斥$/;"	m	struct:pool	typeref:struct:pool::lock	file:
+lock	thread/sync.h	/^struct lock {$/;"	s
+lock_acquire	thread/sync.c	/^void lock_acquire(struct lock* plock) {$/;"	f
+lock_init	thread/sync.c	/^void lock_init(struct lock* plock) {$/;"	f
+lock_release	thread/sync.c	/^void lock_release(struct lock* plock) {$/;"	f
+logic_parts	device/ide.h	/^   struct partition logic_parts[8];	   \/\/ 逻辑分区数量无限,但总得有个支持的上限,那就支持8个$/;"	m	struct:disk	typeref:struct:disk::partition
+lseek	lib/user/syscall.c	/^int32_t lseek(int32_t fd, int32_t offset, uint8_t whence) {$/;"	f
+magic	fs/super_block.h	/^   uint32_t magic;		    \/\/ 用来标识文件系统类型,支持多文件系统的操作系统通过此标志来识别文件系统类型$/;"	m	struct:super_block
+main	command/cat.c	/^int main(int argc, char** argv) {$/;"	f
+main	kernel/main.c	/^int main(void) {$/;"	f
+main_thread	thread/thread.c	/^struct task_struct* main_thread;    \/\/ 主线程PCB$/;"	v	typeref:struct:task_struct
+make_clear_abs_path	shell/buildin_cmd.c	/^void make_clear_abs_path(char* path, char* final_path) {$/;"	f
+make_gdt_desc	userprog/tss.c	/^static struct gdt_desc make_gdt_desc(uint32_t* desc_addr, uint32_t limit, uint8_t attr_low, uint8_t attr_high) {$/;"	f	file:
+make_idt_desc	kernel/interrupt.c	/^static void make_idt_desc(struct gate_desc* p_gdesc, uint8_t attr, intr_handler function) { $/;"	f	file:
+make_main_thread	thread/thread.c	/^static void make_main_thread(void) {$/;"	f	file:
+malloc	lib/user/syscall.c	/^void* malloc(uint32_t size) {$/;"	f
+malloc_page	kernel/memory.c	/^void* malloc_page(enum pool_flags pf, uint32_t pg_cnt) {$/;"	f
+max_lba	device/ide.c	43;"	d	file:
+mem_block	kernel/memory.h	/^struct mem_block {$/;"	s
+mem_block_desc	kernel/memory.h	/^struct mem_block_desc {$/;"	s
+mem_cpy	boot/loader.S	/^mem_cpy:		      $/;"	l
+mem_init	kernel/memory.c	/^void mem_init() {$/;"	f
+mem_pool_init	kernel/memory.c	/^static void mem_pool_init(uint32_t all_mem) {$/;"	f	file:
+memcmp	lib/string.c	/^int memcmp(const void* a_, const void* b_, uint32_t size) {$/;"	f
+memcpy	lib/string.c	/^void memcpy(void* dst_, const void* src_, uint32_t size) {$/;"	f
+memset	lib/string.c	/^void memset(void* dst_, uint8_t value, uint32_t size) {$/;"	f
+mfree_page	kernel/memory.c	/^void mfree_page(enum pool_flags pf, void* _vaddr, uint32_t pg_cnt) {$/;"	f
+mil_seconds_per_intr	device/timer.c	17;"	d	file:
+mkdir	lib/user/syscall.c	/^int32_t mkdir(const char* pathname) {$/;"	f
+mount_partition	fs/fs.c	/^static bool mount_partition(struct list_elem* pelem, int arg) {$/;"	f	file:
+mtime_sleep	device/timer.c	/^void mtime_sleep(uint32_t m_seconds) {$/;"	f
+mul	boot/loader.S	/^      mul dx$/;"	d
+mul	boot/mbr.S	/^      mul dx$/;"	d
+my_channel	device/ide.h	/^   struct ide_channel* my_channel;	   \/\/ 此块硬盘归属于哪个ide通道$/;"	m	struct:disk	typeref:struct:disk::ide_channel
+my_disk	device/ide.h	/^   struct disk* my_disk;	 \/\/ 分区所属的硬盘$/;"	m	struct:partition	typeref:struct:partition::disk
+my_shell	shell/shell.c	/^void my_shell(void) {$/;"	f
+name	device/ide.h	/^   char name[8];			   \/\/ 本硬盘的名称，如sda等$/;"	m	struct:disk
+name	device/ide.h	/^   char name[8];		 \/\/ 分区名称$/;"	m	struct:partition
+name	device/ide.h	/^   char name[8];		 \/\/ 本ata通道名称, 如ata0,也被叫做ide0. 可以参考bochs配置文件中关于硬盘的配置。$/;"	m	struct:ide_channel
+name	thread/thread.h	/^   char name[TASK_NAME_LEN];$/;"	m	struct:task_struct
+next	lib/kernel/list.h	/^   struct list_elem* next; \/\/ 后继结点$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
+next_pos	device/ioqueue.c	/^static int32_t next_pos(int32_t pos) {$/;"	f	file:
+off_size	fs/inode.c	/^   uint32_t off_size;	\/\/ inode在扇区内的字节偏移量$/;"	m	struct:inode_position	file:
+offset	lib/kernel/list.h	5;"	d
+oflags	fs/fs.h	/^enum oflags {$/;"	g
+open	lib/user/syscall.c	/^int32_t open(char* pathname, uint8_t flag) {$/;"	f
+open_inodes	device/ide.h	/^   struct list open_inodes;	 \/\/ 本分区打开的i结点队列$/;"	m	struct:partition	typeref:struct:partition::list
+open_root_dir	fs/dir.c	/^void open_root_dir(struct partition* part) {$/;"	f
+opendir	lib/user/syscall.c	/^struct dir* opendir(const char* name) {$/;"	f
+other	device/ide.c	/^   uint8_t  other[446];		 \/\/ 引导代码$/;"	m	struct:boot_sector	file:
+outb	lib/kernel/io.h	/^static inline void outb(uint16_t port, uint8_t data) {$/;"	f
+outsw	lib/kernel/io.h	/^static inline void outsw(uint16_t port, const void* addr, uint32_t word_cnt) {$/;"	f
+p_align	userprog/exec.c	/^   Elf32_Word p_align;$/;"	m	struct:Elf32_Phdr	file:
+p_filesz	userprog/exec.c	/^   Elf32_Word p_filesz;$/;"	m	struct:Elf32_Phdr	file:
+p_flags	userprog/exec.c	/^   Elf32_Word p_flags;$/;"	m	struct:Elf32_Phdr	file:
+p_memsz	userprog/exec.c	/^   Elf32_Word p_memsz;$/;"	m	struct:Elf32_Phdr	file:
+p_mode_start	boot/loader.S	/^p_mode_start:$/;"	l
+p_no	device/ide.c	/^uint8_t p_no = 0, l_no = 0;	 \/\/ 用来记录硬盘主分区和逻辑分区的下标$/;"	v
+p_offset	userprog/exec.c	/^   Elf32_Off  p_offset;$/;"	m	struct:Elf32_Phdr	file:
+p_paddr	userprog/exec.c	/^   Elf32_Addr p_paddr;$/;"	m	struct:Elf32_Phdr	file:
+p_type	userprog/exec.c	/^   Elf32_Word p_type;		 \/\/ 见下面的enum segment_type$/;"	m	struct:Elf32_Phdr	file:
+p_vaddr	userprog/exec.c	/^   Elf32_Addr p_vaddr;$/;"	m	struct:Elf32_Phdr	file:
+pad	fs/super_block.h	/^   uint8_t  pad[460];		    \/\/ 加上460字节,凑够512字节1扇区大小$/;"	m	struct:super_block
+pad_print	thread/thread.c	/^static void pad_print(char* buf, int32_t buf_len, void* ptr, char format) {$/;"	f	file:
+page_dir_activate	userprog/process.c	/^void page_dir_activate(struct task_struct* p_thread) {$/;"	f
+page_table_add	kernel/memory.c	/^static void page_table_add(void* _vaddr, void* _page_phyaddr) {$/;"	f	file:
+page_table_pte_remove	kernel/memory.c	/^static void page_table_pte_remove(uint32_t vaddr) {$/;"	f	file:
+palloc	kernel/memory.c	/^static void* palloc(struct pool* m_pool) {$/;"	f	file:
+panic	lib/user/assert.h	7;"	d
+panic_spin	kernel/debug.c	/^void panic_spin(char* filename,	       \\$/;"	f
+parent_dir	fs/fs.h	/^   struct dir* parent_dir;		    \/\/ 文件或目录所在的直接父目录$/;"	m	struct:path_search_record	typeref:struct:path_search_record::dir
+parent_pid	thread/thread.h	/^   pid_t parent_pid;		 \/\/ 父进程pid$/;"	m	struct:task_struct
+part_lba_base	fs/super_block.h	/^   uint32_t part_lba_base;	    \/\/ 本分区的起始lba地址$/;"	m	struct:super_block
+part_tag	device/ide.h	/^   struct list_elem part_tag;	 \/\/ 用于队列中的标记$/;"	m	struct:partition	typeref:struct:partition::list_elem
+partition	device/ide.h	/^struct partition {$/;"	s
+partition_format	fs/fs.c	/^static void partition_format(struct partition* part) {$/;"	f	file:
+partition_info	device/ide.c	/^static bool partition_info(struct list_elem* pelem, int arg UNUSED) {$/;"	f	file:
+partition_list	device/ide.c	/^struct list partition_list;	 \/\/ 分区队列$/;"	v	typeref:struct:list
+partition_scan	device/ide.c	/^static void partition_scan(struct disk* hd, uint32_t ext_lba) {$/;"	f	file:
+partition_table	device/ide.c	/^   struct   partition_table_entry partition_table[4];       \/\/ 分区表中有4项,共64字节$/;"	m	struct:boot_sector	typeref:struct:boot_sector::partition_table_entry	file:
+partition_table_entry	device/ide.c	/^struct partition_table_entry {$/;"	s	file:
+path_depth_cnt	fs/fs.c	/^int32_t path_depth_cnt(char* pathname) {$/;"	f
+path_parse	fs/fs.c	/^char* path_parse(char* pathname, char* name_store) {$/;"	f
+path_search_record	fs/fs.h	/^struct path_search_record {$/;"	s
+pcb_fd_install	fs/file.c	/^int32_t pcb_fd_install(int32_t globa_fd_idx) {$/;"	f
+pde_ptr	kernel/memory.c	/^uint32_t* pde_ptr(uint32_t vaddr) {$/;"	f
+pfree	kernel/memory.c	/^void pfree(uint32_t pg_phy_addr) {$/;"	f
+pgdir	thread/thread.h	/^   uint32_t* pgdir;              \/\/ 进程自己页表的虚拟地址$/;"	m	struct:task_struct
+phy_addr_start	kernel/memory.c	/^   uint32_t phy_addr_start;	 \/\/ 本内存池所管理物理内存的起始地址$/;"	m	struct:pool	file:
+pic_init	kernel/interrupt.c	/^static void pic_init(void) {$/;"	f	file:
+pid	thread/thread.h	/^   pid_t pid;$/;"	m	struct:task_struct
+pid2thread	thread/thread.c	/^struct task_struct* pid2thread(int32_t pid) {$/;"	f
+pid_bitmap	thread/thread.c	/^   struct bitmap pid_bitmap;  \/\/ pid位图$/;"	m	struct:pid_pool	typeref:struct:pid_pool::bitmap	file:
+pid_bitmap_bits	thread/thread.c	/^uint8_t pid_bitmap_bits[128] = {0};$/;"	v
+pid_check	thread/thread.c	/^static bool pid_check(struct list_elem* pelem, int32_t pid) {$/;"	f	file:
+pid_lock	thread/thread.c	/^   struct lock pid_lock;      \/\/ 分配pid锁$/;"	m	struct:pid_pool	typeref:struct:pid_pool::lock	file:
+pid_pool	thread/thread.c	/^struct pid_pool {$/;"	s	file:
+pid_pool	thread/thread.c	/^}pid_pool;$/;"	v	typeref:struct:pid_pool
+pid_pool_init	thread/thread.c	/^static void pid_pool_init(void) { $/;"	f	file:
+pid_start	thread/thread.c	/^   uint32_t pid_start;	      \/\/ 起始pid$/;"	m	struct:pid_pool	file:
+pid_t	thread/thread.h	/^typedef int16_t pid_t;$/;"	t
+pipe	lib/user/syscall.c	/^int32_t pipe(int32_t pipefd[2]) {$/;"	f
+pipe_read	shell/pipe.c	/^uint32_t pipe_read(int32_t fd, void* buf, uint32_t count) {$/;"	f
+pipe_write	shell/pipe.c	/^uint32_t pipe_write(int32_t fd, const void* buf, uint32_t count) {$/;"	f
+pool	kernel/memory.c	/^struct pool {$/;"	s	file:
+pool_bitmap	kernel/memory.c	/^   struct bitmap pool_bitmap;	 \/\/ 本内存池用到的位图结构,用于管理物理内存$/;"	m	struct:pool	typeref:struct:pool::bitmap	file:
+pool_flags	kernel/memory.h	/^enum pool_flags {$/;"	g
+pool_size	kernel/memory.c	/^   uint32_t pool_size;		 \/\/ 本内存池字节容量$/;"	m	struct:pool	file:
+pop	kernel/kernel.S	/^   pop ds$/;"	d
+pop	kernel/kernel.asm	/^ pop ds$/;"	d
+port_base	device/ide.h	/^   uint16_t port_base;		 \/\/ 本通道的起始端口号$/;"	m	struct:ide_channel
+prev	lib/kernel/list.h	/^   struct list_elem* prev; \/\/ 前躯结点$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
+prim_parts	device/ide.h	/^   struct partition prim_parts[4];	   \/\/ 主分区顶多是4个$/;"	m	struct:disk	typeref:struct:disk::partition
+print_prompt	shell/shell.c	/^void print_prompt(void) {$/;"	f
+printf	lib/stdio.c	/^uint32_t printf(const char* format, ...) {$/;"	f
+printk	lib/kernel/stdio-kernel.c	/^void printk(const char* format, ...) {$/;"	f
+priority	thread/thread.h	/^   uint8_t priority;$/;"	m	struct:task_struct
+process_activate	userprog/process.c	/^void process_activate(struct task_struct* p_thread) {$/;"	f
+process_execute	userprog/process.c	/^void process_execute(void* filename, char* name) { $/;"	f
+producer	device/ioqueue.h	/^    struct task_struct* producer;$/;"	m	struct:ioqueue	typeref:struct:ioqueue::task_struct
+ps	lib/user/syscall.c	/^void ps(void) {$/;"	f
+pte_ptr	kernel/memory.c	/^uint32_t* pte_ptr(uint32_t vaddr) {$/;"	f
+push	kernel/kernel.S	/^   push ds$/;"	d
+push	kernel/kernel.asm	/^ push ds$/;"	d
+put_char	lib/kernel/print.S	/^put_char:$/;"	l
+put_int	lib/kernel/print.S	/^put_int:$/;"	l
+put_int_buffer	lib/kernel/print.S	/^put_int_buffer    dq    0     ; 定义8字节缓冲区用于数字到字符的转换$/;"	d
+put_str	lib/kernel/print.S	/^put_str:$/;"	l
+putchar	lib/user/syscall.c	/^void putchar(char char_asci) {$/;"	f
+rd_disk_m_16	boot/mbr.S	/^rd_disk_m_16:	   $/;"	l
+rd_disk_m_32	boot/loader.S	/^rd_disk_m_32:	   $/;"	l
+read	lib/user/syscall.c	/^int32_t read(int32_t fd, void* buf, uint32_t count) {$/;"	f
+read_from_sector	device/ide.c	/^static void read_from_sector(struct disk* hd, void* buf, uint8_t sec_cnt) {$/;"	f	file:
+readdir	lib/user/syscall.c	/^struct dir_entry* readdir(struct dir* dir) {$/;"	f
+readline	shell/shell.c	/^static void readline(char* buf, int32_t count) {$/;"	f	file:
+reg_alt_status	device/ide.c	24;"	d	file:
+reg_cmd	device/ide.c	23;"	d	file:
+reg_ctl	device/ide.c	25;"	d	file:
+reg_data	device/ide.c	15;"	d	file:
+reg_dev	device/ide.c	21;"	d	file:
+reg_error	device/ide.c	16;"	d	file:
+reg_lba_h	device/ide.c	20;"	d	file:
+reg_lba_l	device/ide.c	18;"	d	file:
+reg_lba_m	device/ide.c	19;"	d	file:
+reg_sect_cnt	device/ide.c	17;"	d	file:
+reg_status	device/ide.c	22;"	d	file:
+register_handler	kernel/interrupt.c	/^void register_handler(uint8_t vector_no, intr_handler function) {$/;"	f
+release_pid	thread/thread.c	/^void release_pid(pid_t pid) {$/;"	f
+release_prog_resource	userprog/wait_exit.c	/^static void release_prog_resource(struct task_struct* release_thread) {$/;"	f	file:
+rewinddir	lib/user/syscall.c	/^void rewinddir(struct dir* dir) {$/;"	f
+rmdir	lib/user/syscall.c	/^int32_t rmdir(const char* pathname) {$/;"	f
+root_dir	fs/dir.c	/^struct dir root_dir;             \/\/ 根目录$/;"	v	typeref:struct:dir
+root_inode_no	fs/super_block.h	/^   uint32_t root_inode_no;	    \/\/ 根目录所在的I结点号$/;"	m	struct:super_block
+running_thread	thread/thread.c	/^struct task_struct* running_thread() {$/;"	f
+sb	device/ide.h	/^   struct super_block* sb;	 \/\/ 本分区的超级块$/;"	m	struct:partition	typeref:struct:partition::super_block
+schedule	thread/thread.c	/^void schedule() {$/;"	f
+search_dir_entry	fs/dir.c	/^bool search_dir_entry(struct partition* part, struct dir* pdir, \\$/;"	f
+search_file	fs/fs.c	/^static int search_file(const char* pathname, struct path_search_record* searched_record) {$/;"	f	file:
+searched_path	fs/fs.h	/^   char searched_path[MAX_PATH_LEN];	    \/\/ 查找过程中的父路径$/;"	m	struct:path_search_record
+sec_cnt	device/ide.c	/^   uint32_t sec_cnt;		 \/\/ 本分区的扇区数目$/;"	m	struct:partition_table_entry	file:
+sec_cnt	device/ide.h	/^   uint32_t sec_cnt;		 \/\/ 扇区数$/;"	m	struct:partition
+sec_cnt	fs/super_block.h	/^   uint32_t sec_cnt;		    \/\/ 本分区总共的扇区数$/;"	m	struct:super_block
+sec_lba	fs/inode.c	/^   uint32_t sec_lba;	\/\/ inode所在的扇区号$/;"	m	struct:inode_position	file:
+section	command/start.S	/^section .text$/;"	l
+section	kernel/kernel.S	/^section .data$/;"	l
+section	kernel/kernel.S	/^section .text$/;"	l
+section	lib/kernel/print.S	/^section .data$/;"	l
+section	lib/kernel/print.S	/^section .text$/;"	l
+section	thread/switch.S	/^section .text$/;"	l
+segment_load	userprog/exec.c	/^static bool segment_load(int32_t fd, uint32_t offset, uint32_t filesz, uint32_t vaddr) {$/;"	f	file:
+segment_type	userprog/exec.c	/^enum segment_type {$/;"	g	file:
+select_disk	device/ide.c	/^static void select_disk(struct disk* hd) {$/;"	f	file:
+select_sector	device/ide.c	/^static void select_sector(struct disk* hd, uint32_t lba, uint8_t sec_cnt) {$/;"	f	file:
+selector	kernel/interrupt.c	/^   uint16_t    selector;$/;"	m	struct:gate_desc	file:
+self_kstack	thread/thread.h	/^   uint32_t* self_kstack;	 \/\/ 各内核线程都用自己的内核栈$/;"	m	struct:task_struct
+sema_down	thread/sync.c	/^void sema_down(struct semaphore* psema) {$/;"	f
+sema_init	thread/sync.c	/^void sema_init(struct semaphore* psema, uint8_t value) {$/;"	f
+sema_up	thread/sync.c	/^void sema_up(struct semaphore* psema) {$/;"	f
+semaphore	thread/sync.h	/^   struct   semaphore semaphore;	    \/\/ 用二元信号量实现锁$/;"	m	struct:lock	typeref:struct:lock::semaphore
+semaphore	thread/sync.h	/^struct semaphore {$/;"	s
+set_cursor	lib/kernel/print.S	/^set_cursor:$/;"	l
+setup_page	boot/loader.S	/^setup_page:$/;"	l
+shift_l_char	device/keyboard.c	21;"	d	file:
+shift_l_make	device/keyboard.c	28;"	d	file:
+shift_r_char	device/keyboard.c	22;"	d	file:
+shift_r_make	device/keyboard.c	29;"	d	file:
+shift_status	device/keyboard.c	/^static bool ctrl_status, shift_status, alt_status, caps_lock_status, ext_scancode;$/;"	v	file:
+signature	device/ide.c	/^   uint16_t signature;		 \/\/ 启动扇区的结束标志是0x55,0xaa,$/;"	m	struct:boot_sector	file:
+sprintf	lib/stdio.c	/^uint32_t sprintf(char* buf, const char* format, ...) {$/;"	f
+ss	thread/thread.h	/^    uint32_t ss;$/;"	m	struct:intr_stack
+ss	userprog/tss.c	/^    uint32_t ss;$/;"	m	struct:tss	file:
+ss0	userprog/tss.c	/^    uint32_t ss0;$/;"	m	struct:tss	file:
+ss1	userprog/tss.c	/^    uint32_t ss1;$/;"	m	struct:tss	file:
+ss2	userprog/tss.c	/^    uint32_t ss2;$/;"	m	struct:tss	file:
+st_filetype	fs/fs.h	/^   enum file_types st_filetype;	 \/\/ 文件类型$/;"	m	struct:stat	typeref:enum:stat::file_types
+st_ino	fs/fs.h	/^   uint32_t st_ino;		 \/\/ inode编号$/;"	m	struct:stat
+st_size	fs/fs.h	/^   uint32_t st_size;		 \/\/ 尺寸$/;"	m	struct:stat
+stack_magic	thread/thread.h	/^   uint32_t stack_magic;	 \/\/ 用这串数字做栈的边界标记,用于检测栈的溢出$/;"	m	struct:task_struct
+start_chs	device/ide.c	/^   uint8_t  start_chs;		 \/\/ 起始柱面号$/;"	m	struct:partition_table_entry	file:
+start_head	device/ide.c	/^   uint8_t  start_head;		 \/\/ 起始磁头号$/;"	m	struct:partition_table_entry	file:
+start_lba	device/ide.c	/^   uint32_t start_lba;		 \/\/ 本分区起始扇区的lba地址$/;"	m	struct:partition_table_entry	file:
+start_lba	device/ide.h	/^   uint32_t start_lba;		 \/\/ 起始扇区$/;"	m	struct:partition
+start_process	userprog/process.c	/^void start_process(void* filename_) {$/;"	f
+start_sec	device/ide.c	/^   uint8_t  start_sec;		 \/\/ 起始扇区号$/;"	m	struct:partition_table_entry	file:
+stat	fs/fs.h	/^struct stat {$/;"	s
+stat	lib/user/syscall.c	/^int32_t stat(const char* path, struct stat* buf) {$/;"	f
+status	thread/thread.h	/^   enum task_status status;$/;"	m	struct:task_struct	typeref:enum:task_struct::task_status
+std_fd	fs/file.h	/^enum std_fd {$/;"	g
+stderr_no	fs/file.h	/^   stderr_no   \/\/ 2 标准错误$/;"	e	enum:std_fd
+stdin_no	fs/file.h	/^   stdin_no,   \/\/ 0 标准输入$/;"	e	enum:std_fd
+stdout_no	fs/file.h	/^   stdout_no,  \/\/ 1 标准输出$/;"	e	enum:std_fd
+strcat	lib/string.c	/^char* strcat(char* dst_, const char* src_) {$/;"	f
+strchr	lib/string.c	/^char* strchr(const char* str, const uint8_t ch) {$/;"	f
+strchrs	lib/string.c	/^uint32_t strchrs(const char* str, uint8_t ch) {$/;"	f
+strcmp	lib/string.c	/^int8_t strcmp (const char* a, const char* b) {$/;"	f
+strcpy	lib/string.c	/^char* strcpy(char* dst_, const char* src_) {$/;"	f
+strlen	lib/string.c	/^uint32_t strlen(const char* str) {$/;"	f
+strrchr	lib/string.c	/^char* strrchr(const char* str, const uint8_t ch) {$/;"	f
+super_block	fs/super_block.h	/^struct super_block {$/;"	s
+swap_pairs_bytes	device/ide.c	/^static void swap_pairs_bytes(const char* dst, char* buf, uint32_t len) {$/;"	f	file:
+switch_to	thread/switch.S	/^switch_to:$/;"	l
+sync_dir_entry	fs/dir.c	/^bool sync_dir_entry(struct dir* parent_dir, struct dir_entry* p_de, void* io_buf) {$/;"	f
+sys_chdir	fs/fs.c	/^int32_t sys_chdir(const char* path) {$/;"	f
+sys_close	fs/fs.c	/^int32_t sys_close(int32_t fd) {$/;"	f
+sys_closedir	fs/fs.c	/^int32_t sys_closedir(struct dir* dir) {$/;"	f
+sys_execv	userprog/exec.c	/^int32_t sys_execv(const char* path, const char* argv[]) {$/;"	f
+sys_exit	userprog/wait_exit.c	/^void sys_exit(int32_t status) {$/;"	f
+sys_fd_redirect	shell/pipe.c	/^void sys_fd_redirect(uint32_t old_local_fd, uint32_t new_local_fd) {$/;"	f
+sys_fork	userprog/fork.c	/^pid_t sys_fork(void) {$/;"	f
+sys_free	kernel/memory.c	/^void sys_free(void* ptr) {$/;"	f
+sys_getcwd	fs/fs.c	/^char* sys_getcwd(char* buf, uint32_t size) {$/;"	f
+sys_getpid	userprog/syscall-init.c	/^uint32_t sys_getpid(void) {$/;"	f
+sys_help	fs/fs.c	/^void sys_help(void) {$/;"	f
+sys_lseek	fs/fs.c	/^int32_t sys_lseek(int32_t fd, int32_t offset, uint8_t whence) {$/;"	f
+sys_malloc	kernel/memory.c	/^void* sys_malloc(uint32_t size) {$/;"	f
+sys_mkdir	fs/fs.c	/^int32_t sys_mkdir(const char* pathname) {$/;"	f
+sys_open	fs/fs.c	/^int32_t sys_open(const char* pathname, uint8_t flags) {$/;"	f
+sys_opendir	fs/fs.c	/^struct dir* sys_opendir(const char* name) {$/;"	f
+sys_pipe	shell/pipe.c	/^int32_t sys_pipe(int32_t pipefd[2]) {$/;"	f
+sys_ps	thread/thread.c	/^void sys_ps(void) {$/;"	f
+sys_putchar	fs/fs.c	/^void sys_putchar(char char_asci) {$/;"	f
+sys_read	fs/fs.c	/^int32_t sys_read(int32_t fd, void* buf, uint32_t count) {$/;"	f
+sys_readdir	fs/fs.c	/^struct dir_entry* sys_readdir(struct dir* dir) {$/;"	f
+sys_rewinddir	fs/fs.c	/^void sys_rewinddir(struct dir* dir) {$/;"	f
+sys_rmdir	fs/fs.c	/^int32_t sys_rmdir(const char* pathname) {$/;"	f
+sys_stat	fs/fs.c	/^int32_t sys_stat(const char* path, struct stat* buf) {$/;"	f
+sys_unlink	fs/fs.c	/^int32_t sys_unlink(const char* pathname) {$/;"	f
+sys_wait	userprog/wait_exit.c	/^pid_t sys_wait(int32_t* status) {$/;"	f
+sys_write	fs/fs.c	/^int32_t sys_write(int32_t fd, const void* buf, uint32_t count) {$/;"	f
+syscall	userprog/syscall-init.c	/^typedef void* syscall;$/;"	t	file:
+syscall_handler	kernel/kernel.S	/^syscall_handler:$/;"	l
+syscall_handler	kernel/kernel.asm	/^syscall_handler:$/;"	l
+syscall_init	userprog/syscall-init.c	/^void syscall_init(void) {$/;"	f
+syscall_nr	userprog/syscall-init.c	15;"	d	file:
+syscall_table	userprog/syscall-init.c	/^syscall syscall_table[syscall_nr];$/;"	v
+tab	device/keyboard.c	13;"	d	file:
+tail	device/ioqueue.h	/^    int32_t tail;			    \/\/ 队尾,数据从队尾处读出$/;"	m	struct:ioqueue
+tail	lib/kernel/list.h	/^   struct list_elem tail;$/;"	m	struct:list	typeref:struct:list::list_elem
+task_status	thread/thread.h	/^enum task_status {$/;"	g
+task_struct	thread/thread.h	/^struct task_struct {$/;"	s
+thread_all_list	thread/thread.c	/^struct list thread_all_list;	    \/\/ 所有任务队列$/;"	v	typeref:struct:list
+thread_block	thread/thread.c	/^void thread_block(enum task_status stat) {$/;"	f
+thread_create	thread/thread.c	/^void thread_create(struct task_struct* pthread, thread_func function, void* func_arg) {$/;"	f
+thread_exit	thread/thread.c	/^void thread_exit(struct task_struct* thread_over, bool need_schedule) {$/;"	f
+thread_func	thread/thread.h	/^typedef void thread_func(void*);$/;"	t
+thread_init	thread/thread.c	/^void thread_init(void) {$/;"	f
+thread_ready_list	thread/thread.c	/^struct list thread_ready_list;	    \/\/ 就绪队列$/;"	v	typeref:struct:list
+thread_stack	thread/thread.h	/^struct thread_stack {$/;"	s
+thread_start	thread/thread.c	/^struct task_struct* thread_start(char* name, int prio, thread_func function, void* func_arg) {$/;"	f
+thread_tag	thread/thread.c	/^static struct list_elem* thread_tag;\/\/ 用于保存队列中的线程结点$/;"	v	typeref:struct:list_elem	file:
+thread_unblock	thread/thread.c	/^void thread_unblock(struct task_struct* pthread) {$/;"	f
+thread_yield	thread/thread.c	/^void thread_yield(void) {$/;"	f
+ticks	device/timer.c	/^uint32_t ticks;          \/\/ ticks是内核自中断开启以来总共的嘀嗒数$/;"	v
+ticks	thread/thread.h	/^   uint8_t ticks;	   \/\/ 每次在处理器上执行的时间嘀嗒数$/;"	m	struct:task_struct
+ticks_to_sleep	device/timer.c	/^static void ticks_to_sleep(uint32_t sleep_ticks) {$/;"	f	file:
+timer_init	device/timer.c	/^void timer_init() {$/;"	f
+total_mem_bytes	boot/loader.S	/^   total_mem_bytes dd 0					 $/;"	d
+trace	userprog/tss.c	/^    uint32_t trace;$/;"	m	struct:tss	file:
+true	kernel/global.h	122;"	d
+tss	userprog/tss.c	/^static struct tss tss;$/;"	v	typeref:struct:tss	file:
+tss	userprog/tss.c	/^struct tss {$/;"	s	file:
+tss_init	userprog/tss.c	/^void tss_init() {$/;"	f
+two_sec	fs/inode.c	/^   bool	 two_sec;	\/\/ inode是否跨扇区$/;"	m	struct:inode_position	file:
+u_block_desc	thread/thread.h	/^   struct mem_block_desc u_block_desc[DESC_CNT];   \/\/ 用户进程内存块描述符$/;"	m	struct:task_struct	typeref:struct:task_struct::mem_block_desc
+uint16_t	lib/stdint.h	/^typedef unsigned short int uint16_t;$/;"	t
+uint32_t	lib/stdint.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	lib/stdint.h	/^typedef unsigned long long int uint64_t;$/;"	t
+uint8_t	lib/stdint.h	/^typedef unsigned char uint8_t;$/;"	t
+unlink	lib/user/syscall.c	/^int32_t unlink(const char* pathname) {$/;"	f
+unused_retaddr	thread/thread.h	/^   void (*unused_retaddr);$/;"	m	struct:thread_stack
+update_inode_open_cnts	userprog/fork.c	/^static void update_inode_open_cnts(struct task_struct* thread) {$/;"	f	file:
+update_tss_esp	userprog/tss.c	/^void update_tss_esp(struct task_struct* pthread) {$/;"	f
+user_pool	kernel/memory.c	/^struct pool kernel_pool, user_pool;      \/\/ 生成内核内存池和用户内存池$/;"	v	typeref:struct:
+user_spin	lib/user/assert.c	/^void user_spin(char* filename, int line, const char* func, const char* condition) {$/;"	f
+userprog_vaddr	thread/thread.h	/^   struct virtual_addr userprog_vaddr;   \/\/ 用户进程的虚拟地址$/;"	m	struct:task_struct	typeref:struct:task_struct::virtual_addr
+va_arg	lib/stdio.c	9;"	d	file:
+va_end	lib/kernel/stdio-kernel.c	8;"	d	file:
+va_end	lib/stdio.c	10;"	d	file:
+va_list	lib/stdio.h	/^typedef char* va_list;$/;"	t
+va_start	lib/kernel/stdio-kernel.c	7;"	d	file:
+va_start	lib/stdio.c	8;"	d	file:
+vaddr_bitmap	kernel/memory.h	/^   struct bitmap vaddr_bitmap;$/;"	m	struct:virtual_addr	typeref:struct:virtual_addr::bitmap
+vaddr_get	kernel/memory.c	/^static void* vaddr_get(enum pool_flags pf, uint32_t pg_cnt) {$/;"	f	file:
+vaddr_remove	kernel/memory.c	/^static void vaddr_remove(enum pool_flags pf, void* _vaddr, uint32_t pg_cnt) {$/;"	f	file:
+vaddr_start	kernel/memory.h	/^   uint32_t vaddr_start;$/;"	m	struct:virtual_addr
+value	thread/sync.h	/^   uint8_t  value;$/;"	m	struct:semaphore
+vec_no	thread/thread.h	/^    uint32_t vec_no;	 \/\/ kernel.S 宏VECTOR中push %1压入的中断号$/;"	m	struct:intr_stack
+virtual_addr	kernel/memory.h	/^struct virtual_addr {$/;"	s
+vsprintf	lib/stdio.c	/^uint32_t vsprintf(char* str, const char* format, va_list ap) {$/;"	f
+wait	lib/user/syscall.c	/^pid_t wait(int32_t* status) {$/;"	f
+waiters	thread/sync.h	/^   struct   list waiters;$/;"	m	struct:semaphore	typeref:struct:semaphore::list
+wakeup	device/ioqueue.c	/^static void wakeup(struct task_struct** waiter) {$/;"	f	file:
+wash_path	shell/buildin_cmd.c	/^static void wash_path(char* old_abs_path, char* new_abs_path) {$/;"	f	file:
+whence	fs/fs.h	/^enum whence {$/;"	g
+write	lib/user/syscall.c	/^uint32_t write(int32_t fd, const void* buf, uint32_t count) {$/;"	f
+write2sector	device/ide.c	/^static void write2sector(struct disk* hd, void* buf, uint8_t sec_cnt) {$/;"	f	file:
+write_deny	fs/inode.h	/^   bool write_deny;	   \/\/ 写文件不能并行,进程写文件前检查此标识$/;"	m	struct:inode

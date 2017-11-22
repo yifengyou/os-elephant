@@ -590,10 +590,60 @@ int16_t	lib/stdint.h	/^typedef signed short int int16_t;$/;"	t
 int32_t	lib/stdint.h	/^typedef signed int int32_t;$/;"	t
 int64_t	lib/stdint.h	/^typedef signed long long int int64_t;$/;"	t
 int8_t	lib/stdint.h	/^typedef signed char int8_t;$/;"	t
+intr0x00entry	kernel/kernel.asm	/^intr0x00entry:$/;"	l
+intr0x01entry	kernel/kernel.asm	/^intr0x01entry:$/;"	l
+intr0x02entry	kernel/kernel.asm	/^intr0x02entry:$/;"	l
+intr0x03entry	kernel/kernel.asm	/^intr0x03entry:$/;"	l
+intr0x04entry	kernel/kernel.asm	/^intr0x04entry:$/;"	l
+intr0x05entry	kernel/kernel.asm	/^intr0x05entry:$/;"	l
+intr0x06entry	kernel/kernel.asm	/^intr0x06entry:$/;"	l
+intr0x07entry	kernel/kernel.asm	/^intr0x07entry:$/;"	l
+intr0x08entry	kernel/kernel.asm	/^intr0x08entry:$/;"	l
+intr0x09entry	kernel/kernel.asm	/^intr0x09entry:$/;"	l
+intr0x0aentry	kernel/kernel.asm	/^intr0x0aentry:$/;"	l
+intr0x0bentry	kernel/kernel.asm	/^intr0x0bentry:$/;"	l
+intr0x0centry	kernel/kernel.asm	/^intr0x0centry:$/;"	l
+intr0x0dentry	kernel/kernel.asm	/^intr0x0dentry:$/;"	l
+intr0x0eentry	kernel/kernel.asm	/^intr0x0eentry:$/;"	l
+intr0x0fentry	kernel/kernel.asm	/^intr0x0fentry:$/;"	l
+intr0x10entry	kernel/kernel.asm	/^intr0x10entry:$/;"	l
+intr0x11entry	kernel/kernel.asm	/^intr0x11entry:$/;"	l
+intr0x12entry	kernel/kernel.asm	/^intr0x12entry:$/;"	l
+intr0x13entry	kernel/kernel.asm	/^intr0x13entry:$/;"	l
+intr0x14entry	kernel/kernel.asm	/^intr0x14entry:$/;"	l
+intr0x15entry	kernel/kernel.asm	/^intr0x15entry:$/;"	l
+intr0x16entry	kernel/kernel.asm	/^intr0x16entry:$/;"	l
+intr0x17entry	kernel/kernel.asm	/^intr0x17entry:$/;"	l
+intr0x18entry	kernel/kernel.asm	/^intr0x18entry:$/;"	l
+intr0x19entry	kernel/kernel.asm	/^intr0x19entry:$/;"	l
+intr0x1aentry	kernel/kernel.asm	/^intr0x1aentry:$/;"	l
+intr0x1bentry	kernel/kernel.asm	/^intr0x1bentry:$/;"	l
+intr0x1centry	kernel/kernel.asm	/^intr0x1centry:$/;"	l
+intr0x1dentry	kernel/kernel.asm	/^intr0x1dentry:$/;"	l
+intr0x1eentry	kernel/kernel.asm	/^intr0x1eentry:$/;"	l
+intr0x1fentry	kernel/kernel.asm	/^intr0x1fentry:$/;"	l
+intr0x20entry	kernel/kernel.asm	/^intr0x20entry:$/;"	l
+intr0x21entry	kernel/kernel.asm	/^intr0x21entry:$/;"	l
+intr0x22entry	kernel/kernel.asm	/^intr0x22entry:$/;"	l
+intr0x23entry	kernel/kernel.asm	/^intr0x23entry:$/;"	l
+intr0x24entry	kernel/kernel.asm	/^intr0x24entry:$/;"	l
+intr0x25entry	kernel/kernel.asm	/^intr0x25entry:$/;"	l
+intr0x26entry	kernel/kernel.asm	/^intr0x26entry:$/;"	l
+intr0x27entry	kernel/kernel.asm	/^intr0x27entry:$/;"	l
+intr0x28entry	kernel/kernel.asm	/^intr0x28entry:$/;"	l
+intr0x29entry	kernel/kernel.asm	/^intr0x29entry:$/;"	l
+intr0x2aentry	kernel/kernel.asm	/^intr0x2aentry:$/;"	l
+intr0x2bentry	kernel/kernel.asm	/^intr0x2bentry:$/;"	l
+intr0x2centry	kernel/kernel.asm	/^intr0x2centry:$/;"	l
+intr0x2dentry	kernel/kernel.asm	/^intr0x2dentry:$/;"	l
+intr0x2eentry	kernel/kernel.asm	/^intr0x2eentry:$/;"	l
+intr0x2fentry	kernel/kernel.asm	/^intr0x2fentry:$/;"	l
 intr_disable	kernel/interrupt.c	/^enum intr_status intr_disable() {     $/;"	f
 intr_enable	kernel/interrupt.c	/^enum intr_status intr_enable() {$/;"	f
 intr_entry_table	kernel/kernel.S	/^intr_entry_table:$/;"	l
+intr_entry_table	kernel/kernel.asm	/^intr_entry_table:$/;"	l
 intr_exit	kernel/kernel.S	/^intr_exit:	     $/;"	l
+intr_exit	kernel/kernel.asm	/^intr_exit:$/;"	l
 intr_get_status	kernel/interrupt.c	/^enum intr_status intr_get_status() {$/;"	f
 intr_handler	kernel/interrupt.h	/^typedef void* intr_handler;$/;"	t
 intr_hd_handler	device/ide.c	/^void intr_hd_handler(uint8_t irq_no) {$/;"	f
@@ -752,6 +802,7 @@ pool_bitmap	kernel/memory.c	/^   struct bitmap pool_bitmap;	 \/\/ 本内存池�
 pool_flags	kernel/memory.h	/^enum pool_flags {$/;"	g
 pool_size	kernel/memory.c	/^   uint32_t pool_size;		 \/\/ 本内存池字节容量$/;"	m	struct:pool	file:
 pop	kernel/kernel.S	/^   pop ds$/;"	d
+pop	kernel/kernel.asm	/^ pop ds$/;"	d
 port_base	device/ide.h	/^   uint16_t port_base;		 \/\/ 本通道的起始端口号$/;"	m	struct:ide_channel
 prev	lib/kernel/list.h	/^   struct list_elem* prev; \/\/ 前躯结点$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
 prim_parts	device/ide.h	/^   struct partition prim_parts[4];	   \/\/ 主分区顶多是4个$/;"	m	struct:disk	typeref:struct:disk::partition
@@ -765,6 +816,7 @@ producer	device/ioqueue.h	/^    struct task_struct* producer;$/;"	m	struct:ioque
 ps	lib/user/syscall.c	/^void ps(void) {$/;"	f
 pte_ptr	kernel/memory.c	/^uint32_t* pte_ptr(uint32_t vaddr) {$/;"	f
 push	kernel/kernel.S	/^   push ds$/;"	d
+push	kernel/kernel.asm	/^ push ds$/;"	d
 put_char	lib/kernel/print.S	/^put_char:$/;"	l
 put_int	lib/kernel/print.S	/^put_int:$/;"	l
 put_int_buffer	lib/kernel/print.S	/^put_int_buffer    dq    0     ; 定义8字节缓冲区用于数字到字符的转换$/;"	d
@@ -892,6 +944,7 @@ sys_wait	userprog/wait_exit.c	/^pid_t sys_wait(int32_t* status) {$/;"	f
 sys_write	fs/fs.c	/^int32_t sys_write(int32_t fd, const void* buf, uint32_t count) {$/;"	f
 syscall	userprog/syscall-init.c	/^typedef void* syscall;$/;"	t	file:
 syscall_handler	kernel/kernel.S	/^syscall_handler:$/;"	l
+syscall_handler	kernel/kernel.asm	/^syscall_handler:$/;"	l
 syscall_init	userprog/syscall-init.c	/^void syscall_init(void) {$/;"	f
 syscall_nr	userprog/syscall-init.c	15;"	d	file:
 syscall_table	userprog/syscall-init.c	/^syscall syscall_table[syscall_nr];$/;"	v

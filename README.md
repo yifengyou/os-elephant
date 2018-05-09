@@ -4,6 +4,21 @@
 
 ![os-elephant](https://github.com/yifengyou/os-elephant/blob/master/image/os-elephant.png)
 
+
+>github目录介绍
+
+* code:各章节代码
+* code-c99:二次开发devel
+* vsdx: visio图示
+* syscall:系统调用表资料
+* material_error_src:书中勘误
+* tool:工具脚本
+* image:github md图片目录
+* bochs:bochs源码
+* back:备份及杂项misc
+
+
+
 >内容简介
 
 大学及研究生都有操作系统课程，这类人群具有很高的学术能力,但书中讲的过于抽象与晦涩，以至于很多学生对于此门课程恐惧到都提不出问题，只有会的人才能提出问题。操作系统理论书是无法让读者理解什么是操作系统的，学操作系统不能靠想像，他们需要看到具体的东西。绝大多数技术人都对操作系统怀着好奇的心，他们渴望一本告诉操作系统到底是什么的书，里面不要掺杂太多无关的管理性的东西，代码量不大且是现代操作系统雏形，他们渴望很快看到本质而不花费大量的时间成本。

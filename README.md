@@ -16,15 +16,28 @@
 * bochs - bochs源码
 * back - 备份及杂项misc
 
->该书简介
+>我的任务
 
-&emsp;&emsp;大学及研究生都有操作系统课程，这类人群具有很高的学术能力,但书中讲的过于抽象与晦涩，以至于很多学生对于此门课程恐惧到都提不出问题，只有会的人才能提出问题。操作系统理论书是无法让读者理解什么是操作系统的，学操作系统不能靠想像，他们需要看到具体的东西。绝大多数技术人都对操作系统怀着好奇的心，他们渴望一本告诉操作系统到底是什么的书，里面不要掺杂太多无关的管理性的东西，代码量不大且是现代操作系统雏形，他们渴望很快看到本质而不花费大量的时间成本。
+* **跑通每个实例，代码注释，脚本一键启动**
 
->作者简介
+* **绘制visio图**
+
+* **二次开发**
+
+![visioimage1](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage1.png)
+
+![visioimage2](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage2.png)
+
+![visioimage3](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage3.png) 
+
+
+
+>《操作系统真象还原》作者
 
 ![zhenggang](https://github.com/yifengyou/os-elephant/blob/master/image/zhenggang.png)
 
-&emsp;&emsp;图右为郑刚，毕业于北京大学，前百度运维高级工程师，对操作系统有深入的研究。好运动，喜钻研，热衷于尝试前沿技术，乐于分享学习成果。
+&emsp;&emsp;图右为郑刚，毕业于北京大学，前百度运维高级工程师，对操作系统有深入的研究。好运动，喜钻研，热衷于尝试前沿技术，乐于分享学习成果。<br/>
+&emsp;&emsp;大学及研究生都有操作系统课程，这类人群具有很高的学术能力,但书中讲的过于抽象与晦涩，以至于很多学生对于此门课程恐惧到都提不出问题，只有会的人才能提出问题。操作系统理论书是无法让读者理解什么是操作系统的，学操作系统不能靠想像，他们需要看到具体的东西。绝大多数技术人都对操作系统怀着好奇的心，他们渴望一本告诉操作系统到底是什么的书，里面不要掺杂太多无关的管理性的东西，代码量不大且是现代操作系统雏形，他们渴望很快看到本质而不花费大量的时间成本。<br/>
 
 
 ---

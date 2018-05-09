@@ -2,9 +2,9 @@
 
 > 参考书目：操作系统真象还原
 
-<div align=center>
+<center>
 ![os-elephant](https://github.com/yifengyou/os-elephant/blob/master/image/os-elephant.png)
-</div>
+</center>
 
 >repository目录介绍
 

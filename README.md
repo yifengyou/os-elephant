@@ -6,7 +6,7 @@ Youyifeng
 
 2017下半年
 
-![os-elephant](image\os-elephant.png)
+![os-elephant](https://github.com/yifengyou/os-elephant/blob/master/image/os-elephant.png)
 
 
 ---

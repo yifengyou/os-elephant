@@ -1,6 +1,6 @@
 # OS-Elephant学习笔记
 
-> 参考书目：操作系统真象还原
+> 参考书目 : 操作系统真象还原
 
 ![os-elephant](https://github.com/yifengyou/os-elephant/blob/master/image/os-elephant.png)
 

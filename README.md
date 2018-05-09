@@ -24,7 +24,7 @@
 
 >作者简介
 
-![zhenggang](image\zhenggang.png)
+![zhenggang](https://github.com/yifengyou/os-elephant/blob/master/image/zhenggang.png)
 
 图右为郑刚，毕业于北京大学，前百度运维高级工程师，对操作系统有深入的研究。好运动，喜钻研，热衷于尝试前沿技术，乐于分享学习成果。
 
@@ -419,7 +419,7 @@
 
 &emsp;"当初的写作环境就是0.5平米左右大小的空间：在床和墙壁之间的夹道上放了一个黄色的小凳子当桌子，一个蓝色的更小的凳子当椅子，伸开腿就把空间占满了。当初也觉得自己挺苦逼的，因此情不自禁就拍了照片。"
 
-![半平米的梦想](image\半平米的梦想.png)
+![半平米的梦想](https://github.com/yifengyou/os-elephant/blob/master/image/半平米的梦想.png)
 
 >这本书是如何完成的？
 

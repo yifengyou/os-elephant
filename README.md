@@ -26,21 +26,21 @@
 
 ![visioimage1](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage1.png)
 
-<br>
+***
+
 
 ![visioimage2](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage2.png)
 
-<br>
+***
 
 ![visioimage3](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage3.png)
 
-<br>
+***
 
 ![visioimage4](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage4.png)
 
-<br>
+***
 
----
 
 >《操作系统真象还原》作者
 

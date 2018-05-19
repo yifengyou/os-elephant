@@ -16,6 +16,12 @@
 * bochs - bochs源码
 * back - 备份及杂项misc
 
+>GitBook地址
+
+  <https://yifengyou.gitbooks.io/os-elephant/content/>
+
+![1526719623876.png](image/1526719623876.png)
+
 >我的任务
 
 * **跑通每个实例，代码注释，img生成，脚本一键启动**

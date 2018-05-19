@@ -2,7 +2,7 @@
 
 > 参考书目 : 操作系统真象还原
 
-![os-elephant](https://github.com/yifengyou/os-elephant/blob/master/image/os-elephant.png)
+![os-elephant](image/os-elephant.png)
 
 >repository目录介绍
 
@@ -26,19 +26,19 @@
 
 >visio图示
 
-![visioimage1](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage1.png)
+![visioimage1](image/visioimage1.png)
 
 <br /><br />
 
-![visioimage2](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage2.png)
+![visioimage2](image/visioimage2.png)
 
 <br /><br />
 
-![visioimage3](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage3.png)
+![visioimage3](image/visioimage3.png)
 
 <br /><br />
 
-![visioimage4](https://github.com/yifengyou/os-elephant/blob/master/image/visioimage4.png)
+![visioimage4](image/visioimage4.png)
 
 <br /><br />
 
@@ -46,7 +46,7 @@
 
 >《操作系统真象还原》作者
 
-![zhenggang](https://github.com/yifengyou/os-elephant/blob/master/image/zhenggang.png)
+![zhenggang](image/zhenggang.png)
 
 &emsp;&emsp;图右为郑刚，毕业于北京大学，前百度运维高级工程师，对操作系统有深入的研究。好运动，喜钻研，热衷于尝试前沿技术，乐于分享学习成果。<br/>
 &emsp;&emsp;大学及研究生都有操作系统课程，这类人群具有很高的学术能力,但书中讲的过于抽象与晦涩，以至于很多学生对于此门课程恐惧到都提不出问题，只有会的人才能提出问题。操作系统理论书是无法让读者理解什么是操作系统的，学操作系统不能靠想像，他们需要看到具体的东西。绝大多数技术人都对操作系统怀着好奇的心，他们渴望一本告诉操作系统到底是什么的书，里面不要掺杂太多无关的管理性的东西，代码量不大且是现代操作系统雏形，他们渴望很快看到本质而不花费大量的时间成本。<br/>
@@ -442,7 +442,7 @@
 
 &emsp;&emsp;"当初的写作环境就是0.5平米左右大小的空间：在床和墙壁之间的夹道上放了一个黄色的小凳子当桌子，一个蓝色的更小的凳子当椅子，伸开腿就把空间占满了。当初也觉得自己挺苦逼的，因此情不自禁就拍了照片。"
 
-![半平米的梦想](https://github.com/yifengyou/os-elephant/blob/master/image/半平米的梦想.png)
+![半平米的梦想](image/半平米的梦想.png)
 
 >这本书是如何完成的？
 
@@ -467,7 +467,7 @@
 &emsp;&emsp;干不下去的原因是遇到困难时头脑里有“放弃”的念头，如果头脑中没有这个念头，从来没想过半路退出，那还有什么做不到的呢？成功无非是时间长短的问题。因此做任何事之前，心里不要给自己“放弃”的心里预期，必须要干成为止。举个例子，人口渴时肯定一定要找到水为止，肯定不曾想过放弃找水。学习技术也是一样，如果技术对您来说就像水一样必不可缺时，您必然不会放弃技术，必然会成为技术大牛。也许有人说了，别装B了好嘛，道理谁都懂，大师你这么能忽悠，你自己做到了吗？其实。。。我用了19个月写《操作系统真象还原》这本书，算是“不放弃”的证明吗？有人开始嘟囔了，你说19个月就19个月啊，谁看见了。。。好吧，只有出杀手锏了。<br>
 &emsp;&emsp;很多人都说减肥困难，减个肥就算励志。长肉的原理就是吃了过量的碳水化合物或脂肪或蛋白质，只要减少以上食物的摄入量人就会瘦，因此减肥的难度不大。比减肥更难的是增肥（我又要挨骂了）。啥？增肥困难？多吃就行了啊，吃还困难？要求太奢侈了吧大哥？您听我说，有一小部分人先天就是脾虚型，我就是。脾主肌肉，而思伤脾，因此常期用脑思考的人必然脾虚，脾虚则消化功能差，营养吸收有限，营养不良，因此吃的大部分都拉出去了，吃的多拉的多。。。我师傅就是典型的这类人，特别能吃但是人很瘦，瘦到什么程度呢，话说他当年拍婚纱照的时候，为了把西裤撑起来都穿了毛裤，当时可是夏天啊，哈哈，师傅，多有得罪，我还是很爱你的。我也是不容易胖，吃多少都不长肉，但我从来没想过放弃，通过无氧训练和摄入适量碳水化合物和蛋白质，三个月就有了不小的变化，其实网络上那张苦逼的IT人照片就是我。。。
 
-![it苦逼大佬](https://github.com/yifengyou/os-elephant/blob/master/image/it苦逼大佬.png)
+![it苦逼大佬](image/it苦逼大佬.png)
 
 &emsp;&emsp;"也许有同学说，这肌肉还算大？网上有很多比你还瘦的人练得比你还大。和大伙儿解释一下，瘦型人是最不容易长肌肉的，您想，平时那么瘦，身体说变就变得那么极端，这在自然的情况下是不可能的。如果一个瘦型人能练到超大的肌肉块，肯定是注射了类固醇或者睾丸酮。专业的健美运动员为了打比赛，没有不注射这些的。"<br>
 &emsp;&emsp;**总之坚持是痛苦的，要想成功，脑子中就必须没有“放弃”这个概念。**

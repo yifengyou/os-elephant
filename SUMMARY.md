@@ -20,4 +20,4 @@
 * [参考-Syscall表32位](doc/参考-Syscall表32位.md)
 * [参考-Syscall表64位](doc/参考-Syscall表64位.md)
 * [参考-BIOS调用](doc/参考-BIOS调用.md)
-* [勘误](doc/勘误.md)
+* [《操作系统真象还原》勘误](doc/《操作系统真象还原》勘误.md)

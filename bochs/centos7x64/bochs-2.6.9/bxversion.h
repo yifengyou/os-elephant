@@ -1,7 +1,0 @@
-/////////////////////////////////////////////////////////////////////////
-// This file is checked in as bxversion.h.in.  The configure script
-// substitutes variables and creates bxversion.h.
-/////////////////////////////////////////////////////////////////////////
-
-#define VER_STRING "2.6.9"
-#define REL_STRING "Built from SVN snapshot on April 9, 2017"

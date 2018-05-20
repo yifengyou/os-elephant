@@ -26,14 +26,9 @@
 ## repository目录介绍
 
 * code - 各章节代码
-* code-c99 - 二次开发devel
-* vsdx - visio图示
-* syscall - 系统调用表资料
-* material_error_src - 书中勘误
+* code/dev - 二次开发devel
+* visio - visio图示
 * tool - 工具脚本
-* image - github md图片目录
-* bochs - bochs源码
-* back - 备份及杂项misc
 
 ## GitBook地址
 

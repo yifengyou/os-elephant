@@ -34,8 +34,8 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 ## 相关网址
 
-GitBook地址:<https://yifengyou.gitbooks.io/os-elephant/content/>
-GitHub地址:<https://github.com/yifengyou/os-elephant>
+* GitBook地址:<https://yifengyou.gitbooks.io/os-elephant/content/>
+* GitHub地址:<https://github.com/yifengyou/os-elephant>
 
 ## 我的任务
 
